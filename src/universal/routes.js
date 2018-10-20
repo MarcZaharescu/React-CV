@@ -1,26 +1,30 @@
-import App from './components/app';
-import Home from './components/home';
+import App from "./components/app";
+import Home from "./components/home";
+import About from "./components/about";
+import Contact from "./components/contact";
 
-export default function routesFactory(config) {
-  const appPath = ``;
+export default function routesFactory() {
   const routes = [];
-  console.log('routeFactory')
   routes.push({
-    path: appPath,
-    component: Home,
+    component: App,
     routes: [
       {
         path: `/home`,
         component: Home,
-        exact: true,
+        exact: true
       },
-    ],
+      {
+        path: `/about`,
+        component: About,
+        exact: true
+      },
+      {
+        path: `/contact`,
+        component: Contact,
+        exact: true
+      }
+    ]
   });
 
-  return [
-    {
-      component: App,
-      routes,
-    },
-  ];
+  return routes;
 }
