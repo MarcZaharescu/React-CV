@@ -10,6 +10,4 @@ appRouter.get("/", getHomePage);
 
 baseRouter.use(`/locale`, appRouter);
 
-
-
 export default baseRouter;
