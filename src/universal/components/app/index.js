@@ -5,36 +5,60 @@ import { bindActionCreators } from "redux";
 import { Link } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 
+import Header from "../header";
+
 export class App extends React.Component {
   constructor(...args) {
     super(...args);
   }
 
-  render() {
+  renderNavigation() {
     return (
       <div>
-        <nav className="navbar navbar-light">
-          <ul className="nav navbar-nav">
+        <nav>
+          <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/home">HOME</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">ABOUT</Link>
             </li>
             <li>
-              <Link to="/resume">Resume</Link>
+              <Link to="/resume">RESUME</Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <Link to="/projects">PROJECTS</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
         </nav>
-
-        <div>{renderRoutes(this.props.route.routes)}</div>
       </div>
+    );
+  }
+
+  render() {
+
+    return (
+      <header>
+        <div className="container">
+          <div className="row">
+            <div className="twelve columns">
+              <div id="navigation-links">{this.renderNavigation()} </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="twelve columns">
+              <Header />
+            </div>
+          </div>
+
+
+          {renderRoutes(this.props.route.routes)}
+        </div>
+      </header>
     );
   }
 }

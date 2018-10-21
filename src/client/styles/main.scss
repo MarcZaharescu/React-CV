@@ -1,0 +1,68 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 100px 0 20px;
+  font-size: 90px;
+}
+
+h3 {
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-size: 22px;
+  color: #b8b9ba;
+  padding: 20px 250px 20px;
+}
+a {
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+span {
+  color: white;
+}
+
+header {
+  padding: 20px 0 150px;
+}
+
+header {
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  background: url("https://unsplash.it/1080/720/?image=377") no-repeat fixed
+    center / cover;
+  text-align: center;
+}
+
+ul {
+  padding-inline-start: 0em;
+}
+
+nav ul {
+  color: white;
+  list-style: none;
+  font-size: 20;
+}
+
+nav li {
+  font-size: 14px;
+  padding-right: 13px;
+  padding-bottom: 8px;
+  padding-left: 13px;
+  margin-bottom: 0;
+  display: inline-block;
+  position: relative;
+  height: 20px;
+}
+
+.headline {
+  padding-top: 4em;
+}
+
+.headline-down-button{
+  padding-top: 14em;
+}
