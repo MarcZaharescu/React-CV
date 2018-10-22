@@ -31,6 +31,7 @@ const Header = props => {
   return (
     <section id="home">
       <div className="headline">
+            <div className="section-row">
         <h1>{"Hi, I'm Marc."}</h1>
         <h3>
           {"I'm a London based "}
@@ -41,6 +42,7 @@ const Header = props => {
         <Footer icons={socialMediaIcons} />
         <div className="headline-down-button">
           <FontAwesomeIcon icon="chevron-circle-down" size="3x" />
+        </div>
         </div>
       </div>
     </section>

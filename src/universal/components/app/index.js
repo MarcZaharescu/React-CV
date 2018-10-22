@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 
 import Header from "../header";
+import About from "../about";
+import Resume from "../resume";
 
 export class App extends React.Component {
   constructor(...args) {
@@ -42,18 +44,15 @@ export class App extends React.Component {
     return (
       <div className="main-container">
         <header>
-          <div className="row">
-            <div className="twelve columns">
-              <div id="navigation-links">{this.renderNavigation()} </div>
-            </div>
+          <div className="nav">
+            <div id="navigation-links" className="opaque">{this.renderNavigation()} </div>
           </div>
 
           <div className="row">
-            <div className="twelve columns">
-              <Header />
-            </div>
+            <Header />
           </div>
         </header>
+        <About />
 
         {renderRoutes(this.props.route.routes)}
       </div>
