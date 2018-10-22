@@ -39,10 +39,9 @@ export class App extends React.Component {
   }
 
   render() {
-
     return (
-      <header>
-        <div className="container">
+      <div className="main-container">
+        <header>
           <div className="row">
             <div className="twelve columns">
               <div id="navigation-links">{this.renderNavigation()} </div>
@@ -54,11 +53,10 @@ export class App extends React.Component {
               <Header />
             </div>
           </div>
+        </header>
 
-
-          {renderRoutes(this.props.route.routes)}
-        </div>
-      </header>
+        {renderRoutes(this.props.route.routes)}
+      </div>
     );
   }
 }

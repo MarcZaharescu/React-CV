@@ -29,18 +29,21 @@ const socialMediaIcons = [
 
 const Header = props => {
   return (
-    <div className="headline">
-      <h1>{"Hi, I'm Marc."}</h1>
-      <h3>
-        {"I'm a London based "}
-        <span>Software Engineer. </span>
-        {"I'm currenly focusing on Node, React and Redux web applications."}
-      </h3>
-      <Footer icons={socialMediaIcons} />
-      <div className="headline-down-button">
-        <FontAwesomeIcon icon="chevron-circle-down"  size='4x'/>
+    <section id="home">
+      <div className="headline">
+        <h1>{"Hi, I'm Marc."}</h1>
+        <h3>
+          {"I'm a London based "}
+          <span>Software Engineer. </span>
+          {"I'm currenly focusing on Node, React and Redux web applications."}
+        </h3>
+        <hr/>
+        <Footer icons={socialMediaIcons} />
+        <div className="headline-down-button">
+          <FontAwesomeIcon icon="chevron-circle-down" size="3x" />
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -27,8 +27,15 @@ const config = {
         loaders: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
-        test: /\.png$/,
-        loader: "url-loader?limit=100000"
+        test: /\.(jpg|png|gif|svg|pdf|ico)$/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name]-[hash:8].[ext]'
+                    },
+                },
+            ]
       },
       {
         test: /\.jpg$/,
