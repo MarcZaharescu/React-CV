@@ -47,7 +47,7 @@ nav ul {
   font-size: 20;
 }
 
-div{
+div {
   display: block;
 }
 
@@ -100,14 +100,12 @@ section {
 }
 
 #navigation-links {
-//  position: fixed;
+  //  position: fixed;
   width: 100%;
   margin: auto;
   padding-top: 10px;
   background: #909294;
 }
-
-
 
 // ABOUT ME SECTION
 
@@ -171,15 +169,52 @@ p {
 .left-column {
   width: 25%;
   float: left;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .right-column {
   float: right;
   width: 75%;
   margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-#resume h3, #resume span,
- {
-  color: black;
+#resume h2 {
+  color: #2b2b2b;
+}
+
+#resume hr {
+  width: 100%;
+  padding: 1em 1em 1em 1em;
+}
+
+#resume span {
+  color: #6e7881;
+  font-weight: 100;
+}
+
+#resume h3 span {
+  border-bottom: 3px solid #11abb0;
+  color: #2b2b2b;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#resume h2 {
+  font-size: 25px;
+  font-weight: 700;
+
+}
+
+#resume-separator hr{
+  padding: 2em;
+}
+
+#resume .resume-items{
+  font-weight: 400;
+  font-style:  italic;
+  margin: auto;
+  padding: 0em 0em 1em;
 }

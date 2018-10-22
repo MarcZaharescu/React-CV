@@ -13023,16 +13023,19 @@ var Resume = function Resume(props) {
       { className: "section-row" },
       _react2.default.createElement(
         "div",
-        { className: "education-row" },
+        { className: "resume-row" },
         _react2.default.createElement(
           "div",
           { className: "left-column" },
           _react2.default.createElement(
-            "h2",
+            "h3",
             null,
-            "EDUCATION"
-          ),
-          _react2.default.createElement("hr", null)
+            _react2.default.createElement(
+              "span",
+              null,
+              "EDUCATION"
+            )
+          )
         ),
         _react2.default.createElement(
           "div",
@@ -13041,13 +13044,13 @@ var Resume = function Resume(props) {
             "div",
             null,
             _react2.default.createElement(
-              "h3",
+              "h2",
               null,
               " University of Birmingham "
             ),
             _react2.default.createElement(
               "p",
-              null,
+              { className: "resume-items" },
               _react2.default.createElement(
                 "span",
                 null,
@@ -13056,26 +13059,32 @@ var Resume = function Resume(props) {
               _react2.default.createElement(
                 "span",
                 null,
-                " * "
+                " \u2022 "
               ),
               _react2.default.createElement(
                 "span",
                 null,
                 "2013 - 2017"
               )
+            ),
+            _react2.default.createElement(
+              "span",
+              null,
+              "Describe what I did here for about three lines.Describe what I did here for about three lines.Describe what I did here for about 2-3 lines.",
+              " "
             )
           ),
           _react2.default.createElement(
             "div",
             null,
             _react2.default.createElement(
-              "h3",
+              "h2",
               null,
               " Gheorghe Lazar National College "
             ),
             _react2.default.createElement(
               "p",
-              null,
+              { className: "resume-items" },
               _react2.default.createElement(
                 "span",
                 null,
@@ -13084,16 +13093,238 @@ var Resume = function Resume(props) {
               _react2.default.createElement(
                 "span",
                 null,
-                " * "
+                " \u2022 "
               ),
               _react2.default.createElement(
                 "span",
                 null,
                 "2009 - 2013"
               )
+            ),
+            _react2.default.createElement(
+              "span",
+              null,
+              "Describe what I did here for about three lines. Describe what I did here for about three lines. Describe what I did here for about 2-3 lines.",
+              " "
             )
           )
         )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "resume-separator" },
+        " ",
+        _react2.default.createElement("hr", null)
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "resume-row" },
+        _react2.default.createElement(
+          "div",
+          { className: "left-column" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            _react2.default.createElement(
+              "span",
+              null,
+              "WORK"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "right-column" },
+          _react2.default.createElement(
+            "div",
+            null,
+            _react2.default.createElement(
+              "h2",
+              null,
+              " Tesco Plc "
+            ),
+            _react2.default.createElement(
+              "p",
+              { className: "resume-items" },
+              _react2.default.createElement(
+                "span",
+                null,
+                "Software Engineer"
+              ),
+              _react2.default.createElement(
+                "span",
+                null,
+                " \u2022 "
+              ),
+              _react2.default.createElement(
+                "span",
+                null,
+                "2017 - present"
+              )
+            ),
+            _react2.default.createElement(
+              "span",
+              null,
+              "Describe what I did here for about three lines.Describe what I did here for about three lines.Describe what I did here for about 2-3 lines.",
+              " "
+            )
+          ),
+          _react2.default.createElement(
+            "div",
+            null,
+            _react2.default.createElement(
+              "h2",
+              null,
+              " Talmix PLC "
+            ),
+            _react2.default.createElement(
+              "p",
+              { className: "resume-items" },
+              _react2.default.createElement(
+                "span",
+                null,
+                "Data Analyst"
+              ),
+              _react2.default.createElement(
+                "span",
+                null,
+                " \u2022 "
+              ),
+              _react2.default.createElement(
+                "span",
+                null,
+                "2016 - 2017"
+              )
+            ),
+            _react2.default.createElement(
+              "span",
+              null,
+              "Describe what I did here for about three lines. Describe what I did here for about three lines. Describe what I did here for about 2-3 lines.",
+              " "
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "resume-separator" },
+        " ",
+        _react2.default.createElement("hr", null)
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "resume-row" },
+        _react2.default.createElement(
+          "div",
+          { className: "left-column" },
+          _react2.default.createElement(
+            "h3",
+            null,
+            _react2.default.createElement(
+              "span",
+              null,
+              "SKILLS"
+            )
+          )
+        ),
+        _react2.default.createElement(
+          "div",
+          { className: "right-column" },
+          _react2.default.createElement(
+            "ul",
+            { className: "skills" },
+            _react2.default.createElement(
+              "li",
+              null,
+              _react2.default.createElement(
+                "h2",
+                null,
+                " JavaScript"
+              ),
+              _react2.default.createElement(
+                "span",
+                null,
+                " 10% "
+              )
+            ),
+            _react2.default.createElement(
+              "li",
+              null,
+              _react2.default.createElement(
+                "h2",
+                null,
+                " NodeJS"
+              ),
+              _react2.default.createElement(
+                "span",
+                null,
+                " 60% "
+              )
+            ),
+            _react2.default.createElement(
+              "li",
+              null,
+              _react2.default.createElement(
+                "h2",
+                null,
+                " React"
+              ),
+              _react2.default.createElement(
+                "span",
+                null,
+                " 70% "
+              )
+            ),
+            _react2.default.createElement(
+              "li",
+              null,
+              _react2.default.createElement(
+                "h2",
+                null,
+                " Redux"
+              ),
+              _react2.default.createElement(
+                "span",
+                null,
+                " 50% "
+              )
+            ),
+            _react2.default.createElement(
+              "li",
+              null,
+              _react2.default.createElement(
+                "h2",
+                null,
+                " Java"
+              ),
+              _react2.default.createElement(
+                "span",
+                null,
+                " 30% "
+              )
+            ),
+            _react2.default.createElement(
+              "li",
+              null,
+              _react2.default.createElement(
+                "h2",
+                null,
+                " Git"
+              ),
+              _react2.default.createElement(
+                "span",
+                null,
+                " 20% "
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        "div",
+        { className: "resume-separator" },
+        " ",
+        _react2.default.createElement("hr", null)
       )
     )
   );
@@ -44413,7 +44644,7 @@ exports = module.exports = __webpack_require__(33)(false);
 
 
 // module
-exports.push([module.i, "body {\n  font-family: \"opensans-regular\", sans-serif;\n  color: white; }\n\nh1 {\n  font-weight: 700;\n  margin: 100px 0 20px;\n  font-size: 90px; }\n\nh2 {\n  font-weight: 500; }\n\nh3 {\n  font-size: 22px;\n  font-weight: 400; }\n\na {\n  color: white;\n  padding-left: 12px;\n  padding-right: 12px; }\n\nspan {\n  color: white; }\n\nheader {\n  height: 100%;\n  min-height: 500px;\n  width: 100%;\n  background: url(\"https://unsplash.it/1080/720/?image=377\") no-repeat fixed center/cover;\n  text-align: center;\n  overflow: hidden; }\n\nul {\n  padding-inline-start: 0em; }\n\nnav ul {\n  color: white;\n  list-style: none;\n  font-size: 20; }\n\ndiv {\n  display: block; }\n\nnav li {\n  font-size: 14px;\n  padding-right: 13px;\n  padding-bottom: 8px;\n  padding-left: 13px;\n  margin-bottom: 0;\n  display: inline-block;\n  position: relative;\n  height: 20px; }\n\n.headline h3 {\n  margin-bottom: 25px;\n  color: #b8b9ba;\n  padding: 20px 40px 20px 40px;\n  margin: auto;\n  width: 80%; }\n\n.headline h2 {\n  font-weight: 500;\n  margin: 100px 0 20px; }\n\n.headline-down-button {\n  padding-top: 14em; }\n\nhr {\n  width: 70%; }\n\n.section-row {\n  margin: auto;\n  width: 96%;\n  max-width: 1020px;\n  margin: auto; }\n\nsection {\n  padding: 1em 1em 1em 1em;\n  height: auto;\n  padding-top: 3em;\n  position: relative;\n  margin: auto;\n  overflow: hidden; }\n\n#navigation-links {\n  width: 100%;\n  margin: auto;\n  padding-top: 10px;\n  background: #909294; }\n\n#about-me {\n  background: #2b2b2b; }\n\n.profile-picture {\n  vertical-align: middle;\n  width: 70%;\n  height: auto; }\n\n#div-about-me h2 {\n  font-weight: 600;\n  font-size: 25px;\n  color: white; }\n\n#div-about-me span,\np {\n  line-height: 30px;\n  margin: 1em 0em 2em 0em;\n  font-weight: 100;\n  font-size: 16px;\n  color: #909294; }\n\n#about-me-download {\n  margin-top: 1.6em;\n  color: white;\n  float: right;\n  width: 60%;\n  text-align: center; }\n\n#about-me-download span {\n  color: white;\n  padding: 5px 5px 5px 15px;\n  font-weight: 500; }\n\n#about-me-button {\n  background: #505152;\n  padding: 8px 0px 8px 0px;\n  width: 50%;\n  border-radius: 4px; }\n\n#about-me-contact {\n  float: left;\n  width: 40%; }\n\n#resume {\n  color: black; }\n\n.left-column {\n  width: 25%;\n  float: left; }\n\n.right-column {\n  float: right;\n  width: 75%;\n  margin: auto; }\n\n#resume h3, #resume span {\n  color: black; }\n", ""]);
+exports.push([module.i, "body {\n  font-family: \"opensans-regular\", sans-serif;\n  color: white; }\n\nh1 {\n  font-weight: 700;\n  margin: 100px 0 20px;\n  font-size: 90px; }\n\nh2 {\n  font-weight: 500; }\n\nh3 {\n  font-size: 22px;\n  font-weight: 400; }\n\na {\n  color: white;\n  padding-left: 12px;\n  padding-right: 12px; }\n\nspan {\n  color: white; }\n\nheader {\n  height: 100%;\n  min-height: 500px;\n  width: 100%;\n  background: url(\"https://unsplash.it/1080/720/?image=377\") no-repeat fixed center/cover;\n  text-align: center;\n  overflow: hidden; }\n\nul {\n  padding-inline-start: 0em; }\n\nnav ul {\n  color: white;\n  list-style: none;\n  font-size: 20; }\n\ndiv {\n  display: block; }\n\nnav li {\n  font-size: 14px;\n  padding-right: 13px;\n  padding-bottom: 8px;\n  padding-left: 13px;\n  margin-bottom: 0;\n  display: inline-block;\n  position: relative;\n  height: 20px; }\n\n.headline h3 {\n  margin-bottom: 25px;\n  color: #b8b9ba;\n  padding: 20px 40px 20px 40px;\n  margin: auto;\n  width: 80%; }\n\n.headline h2 {\n  font-weight: 500;\n  margin: 100px 0 20px; }\n\n.headline-down-button {\n  padding-top: 14em; }\n\nhr {\n  width: 70%; }\n\n.section-row {\n  margin: auto;\n  width: 96%;\n  max-width: 1020px;\n  margin: auto; }\n\nsection {\n  padding: 1em 1em 1em 1em;\n  height: auto;\n  padding-top: 3em;\n  position: relative;\n  margin: auto;\n  overflow: hidden; }\n\n#navigation-links {\n  width: 100%;\n  margin: auto;\n  padding-top: 10px;\n  background: #909294; }\n\n#about-me {\n  background: #2b2b2b; }\n\n.profile-picture {\n  vertical-align: middle;\n  width: 70%;\n  height: auto; }\n\n#div-about-me h2 {\n  font-weight: 600;\n  font-size: 25px;\n  color: white; }\n\n#div-about-me span,\np {\n  line-height: 30px;\n  margin: 1em 0em 2em 0em;\n  font-weight: 100;\n  font-size: 16px;\n  color: #909294; }\n\n#about-me-download {\n  margin-top: 1.6em;\n  color: white;\n  float: right;\n  width: 60%;\n  text-align: center; }\n\n#about-me-download span {\n  color: white;\n  padding: 5px 5px 5px 15px;\n  font-weight: 500; }\n\n#about-me-button {\n  background: #505152;\n  padding: 8px 0px 8px 0px;\n  width: 50%;\n  border-radius: 4px; }\n\n#about-me-contact {\n  float: left;\n  width: 40%; }\n\n#resume {\n  color: black; }\n\n.left-column {\n  width: 25%;\n  float: left;\n  padding-top: 1em;\n  padding-bottom: 1em; }\n\n.right-column {\n  float: right;\n  width: 75%;\n  margin: auto;\n  padding-top: 1em;\n  padding-bottom: 1em; }\n\n#resume h2 {\n  color: #2b2b2b; }\n\n#resume hr {\n  width: 100%;\n  padding: 1em 1em 1em 1em; }\n\n#resume span {\n  color: #6e7881;\n  font-weight: 100; }\n\n#resume h3 span {\n  border-bottom: 3px solid #11abb0;\n  color: #2b2b2b;\n  font-size: 18px;\n  font-weight: 500; }\n\n#resume h2 {\n  font-size: 25px;\n  font-weight: 700; }\n\n#resume-separator hr {\n  padding: 2em; }\n\n#resume .resume-items {\n  font-weight: 400;\n  font-style: italic;\n  margin: auto;\n  padding: 0em 0em 1em; }\n", ""]);
 
 // exports
 
