@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Resume = props => {
+const Resume = props => { 
   return (
     <section id="resume">
       <div className="section-row">
@@ -39,9 +39,12 @@ const Resume = props => {
                 about 2-3 lines.{" "}
               </span>
             </div>
+                <div className="resume-separator"> <hr /></div>
           </div>
+
+
         </div>
-        <div className="resume-separator"> <hr /></div>
+
         <div className="resume-row">
           <div className="left-column">
             <h3>

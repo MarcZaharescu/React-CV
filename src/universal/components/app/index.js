@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 
 import Header from "../header";
+import Navigation from "../navigation";
 import About from "../about";
 import Resume from "../resume";
 
@@ -13,6 +14,8 @@ export class App extends React.Component {
   constructor(...args) {
     super(...args);
   }
+
+
 
   renderNavigation() {
     return (
@@ -40,13 +43,19 @@ export class App extends React.Component {
     );
   }
 
+
+
   render() {
+
+    const navigationLinks = [{to:'/home', text:'HOME'}, {to:'/about', text:'ABOUT'},{to:'/resume', text:'RESUME'},{to:'/projects', text:'PROJECTS'},{to:'/contact', text:'CONTACT'}];
+
+
     return (
       <div className="main-container">
         <header>
-          <div className="nav">
-            <div id="navigation-links" className="opaque">{this.renderNavigation()} </div>
-          </div>
+
+
+          <Navigation links={navigationLinks}/>
 
           <div className="row">
             <Header />

@@ -1,6 +1,14 @@
+@import "../../universal/components/navigation/Navigation.scss";
+
+
 body {
   font-family: "opensans-regular", sans-serif;
   color: white;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
 }
 
 h1 {

@@ -1,10 +1,14 @@
 import path from "path";
 import express from "express";
 import routes from "./routes";
+import webpack from 'webpack';
+import webpackMiddleware from 'webpack-dev-middleware';
+import webpackConfig from '../../webpack.config.js';
 
 const app = express();
+ 
 const APP_PORT = 3030;
-
+app.use(webpackMiddleware(webpack(webpackConfig)));
 app.use(`/`, express.static("/Users/admin/dev/general/react-cv/src/public"));
 app.use(routes);
 
