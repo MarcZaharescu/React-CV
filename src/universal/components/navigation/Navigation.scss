@@ -1,4 +1,49 @@
-.navigation__link{
-  color:blue;
-  font-size: 30px;
+$navigation-background: #4e4c4c;
+$break-large: 1200px;
+
+.navigation {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  letter-spacing: 0.2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.navigation__wrapper {
+  display: flex;
+}
+
+.navigation__list-item {
+  display: flex;
+}
+
+.navigation__link {
+  font-size: 0rem;
+  @media (min-width: 500px) {
+    font-size: calc(0.4rem + 0.7vw)
+  }
+  text-decoration: none;
+}
+
+.nav-hide {
+  background: transparent;
+}
+
+.nav-show {
+  background: $navigation-background;
+  transition: top 0.5s;
+  top: 50px;
+}
+
+.navigation__link:active {
+  color: transparent;
+}
+
+.navigation__link:focus {
+  color: orange;
 }

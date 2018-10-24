@@ -15,8 +15,6 @@ export class App extends React.Component {
     super(...args);
   }
 
-
-
   renderNavigation() {
     return (
       <div>
@@ -43,19 +41,19 @@ export class App extends React.Component {
     );
   }
 
-
-
   render() {
-
-    const navigationLinks = [{to:'/home', text:'HOME'}, {to:'/about', text:'ABOUT'},{to:'/resume', text:'RESUME'},{to:'/projects', text:'PROJECTS'},{to:'/contact', text:'CONTACT'}];
-
+    const navigationLinks = [
+      { to: "/home", text: "HOME" },
+      { to: "/about", text: "ABOUT" },
+      { to: "/resume", text: "RESUME" },
+      { to: "/projects", text: "PROJECTS" },
+      { to: "/contact", text: "CONTACT" }
+    ];
 
     return (
       <div className="main-container">
         <header>
-
-
-          <Navigation links={navigationLinks}/>
+          <Navigation links={navigationLinks} />
 
           <div className="row">
             <Header />
