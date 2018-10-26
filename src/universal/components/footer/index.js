@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import SocialMediaIcons from 'react-social-media-icons';
 
-const Footer = (props) => {
+const Footer = ({icons,size}) => {
   return (
   <ul className="social-media">
     <SocialMediaIcons
-      icons={props.icons}
-      iconSize={'2.5em'}
+      icons={icons}
+      iconSize={size}
       iconColor={'#ffffff'}
     />
   </ul>

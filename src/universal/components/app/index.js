@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 import { Link } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 
-import Header from "../header";
+import Home from "../home";
 import Navigation from "../navigation";
 import About from "../about";
 import Resume from "../resume";
@@ -50,16 +50,23 @@ export class App extends React.Component {
       { to: "/contact", text: "CONTACT" }
     ];
 
+    const homeProps ={
+      name: "Marc",
+      profession: "Software Engineer",
+      location: "London",
+      summary: "I'm currenly focusing on Node, React and Redux web applications."
+    }
     return (
       <div className="main-container">
         <header>
           <Navigation links={navigationLinks} />
 
           <div className="row">
-            <Header />
+            <Home name={homeProps.name}  profession={homeProps.profession} location={homeProps.location} summary={homeProps.summary}/>
           </div>
         </header>
-        <About />
+        <About/>
+        <Resume/>
 
         {renderRoutes(this.props.route.routes)}
       </div>

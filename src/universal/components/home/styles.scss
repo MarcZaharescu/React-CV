@@ -1,0 +1,40 @@
+header {
+  height: 100%;
+  min-height: 500px;
+  width: 100%;
+  background: url("https://unsplash.it/1080/720/?image=377") no-repeat fixed
+    center / cover;
+  text-align: center;
+  overflow: hidden;
+}
+
+.home__headline--summary {
+  font-size: calc(1rem + 0.8vw);
+  font-weight: 500;
+  color: #b8b9ba;
+  padding: 20px 40px 20px 40px;
+  margin: auto;
+  width: 45%;
+  letter-spacing: 0.2rem;
+  line-height: calc(1rem + 1.7vw));
+}
+
+.home__headline--title {
+  font-size: calc(3rem + 4.2vw);
+  font-weight: 700;
+  margin: 0;
+  padding-top:15%;
+}
+
+
+.home__button {
+  padding-top: 15%;
+}
+
+.home__headline--bar {
+  width: 45%;
+  border: none;
+  padding:0.5%;
+  height: 0.5px;
+  //background: white;
+}
