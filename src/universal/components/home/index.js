@@ -32,11 +32,14 @@ class Home extends React.Component {
     super(...args);
 
     this.state = {
-      multiplier: 3
+      multiplier: 4
     };
     this.setMultiplier = this.setMultiplier.bind(this);
   }
 
+  componentDidMount() {
+    window.addEventListener("resize", this.setMultiplier);
+  }
   componentWillMount() {
     window.addEventListener("resize", this.setMultiplier);
   }
