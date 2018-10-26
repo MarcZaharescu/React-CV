@@ -1,5 +1,6 @@
 @import "../../universal/components/navigation/styles.scss";
 @import "../../universal/components/home/styles.scss";
+@import "../../universal/components/about/styles.scss";
 
 html {
   font-size: 62.5%;
@@ -15,8 +16,6 @@ ul {
   padding-inline-start: 0em;
 }
 
-
-
 a {
   color: white;
   padding-left: 12px;
@@ -25,10 +24,6 @@ a {
 span {
   color: white;
 }
-
-
-
-
 
 section {
   padding: 1em 1em 1em 1em;
@@ -63,67 +58,11 @@ section {
 
 
 
-
-// ABOUT ME SECTION
-
-#about-me {
-  background: #2b2b2b;
-}
-
-.profile-picture {
-  vertical-align: middle;
-  width: 70%;
-  height: auto;
-}
-
-#div-about-me h2 {
-  font-weight: 600;
-  font-size: 25px;
-  color: white;
-}
-
-#div-about-me span,
-p {
-  line-height: 30px;
-  margin: 1em 0em 2em 0em;
-  font-weight: 100;
-  font-size: 16px;
-  color: #909294;
-}
-
-#about-me-download {
-  margin-top: 1.6em;
-  color: white;
-  float: right;
-  width: 60%;
-  text-align: center;
-}
-
-#about-me-download span {
-  color: white;
-  padding: 5px 5px 5px 15px;
-  font-weight: 500;
-}
-
-#about-me-button {
-  background: #505152;
-  padding: 8px 0px 8px 0px;
-  width: 50%;
-  border-radius: 4px;
-}
-
-#about-me-contact {
-  float: left;
-  width: 40%;
-}
-
 // RESUME SECTION
 
 #resume {
   color: black;
 }
-
-
 
 #resume h2 {
   color: #2b2b2b;

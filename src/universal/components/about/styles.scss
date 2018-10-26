@@ -1,0 +1,50 @@
+#about-me {
+  background: #2b2b2b;
+}
+
+.aboutme__picture {
+  vertical-align: middle;
+  width: 70%;
+  height: auto;
+}
+
+.aboutme__right-title {
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+}
+
+.aboutme__right-span {
+  line-height: 30px;
+  margin: 1em 0em 2em 0em;
+  font-weight: 100;
+  font-size: 16px;
+  color: #909294;
+}
+
+.aboutme__right-download-wrapper {
+  margin-top: 1.6em;
+  color: white;
+  float: right;
+  width: 60%;
+  text-align: center;
+}
+
+.aboutme__right-download--text  {
+  color: white;
+  padding: 5px 5px 5px 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.aboutme__right-download--button {
+  background: #505152;
+  padding: 8px 0px 8px 0px;
+  width: 50%;
+  border-radius: 4px;
+}
+
+.aboutme__right__contact {
+  float: left;
+  width: 40%;
+}

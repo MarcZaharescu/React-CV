@@ -55,7 +55,21 @@ export class App extends React.Component {
       profession: "Software Engineer",
       location: "London",
       summary: "I'm currenly focusing on Node, React and Redux web applications."
-    }
+    };
+
+    const aboutProps ={
+      aboutme: `I will update this about me section later. This is just an example text to
+      see what it looks like to have some text here. About 3 lines. I will update this about me section later.
+      This is just an example text to see what it looks like to have some text here. About 3 lines.`,
+      name:   "Marc Zaharescu",
+      city: "London",
+      country: "United Kingdom",
+      street: "22 Bletchley Street",
+      postcode: "N1 7NX",
+      phone: "+40752071299",
+      email: "zaharescumarc10@gmail.com",
+    };
+
     return (
       <div className="main-container">
         <header>
@@ -65,7 +79,7 @@ export class App extends React.Component {
             <Home name={homeProps.name}  profession={homeProps.profession} location={homeProps.location} summary={homeProps.summary}/>
           </div>
         </header>
-        <About/>
+        <About aboutme={aboutProps.aboutme} name={aboutProps.name} city={aboutProps.city} country={aboutProps.country} street={aboutProps.street} postcode={aboutProps.postcode} phone={aboutProps.phone} email={aboutProps.email} />
         <Resume/>
 
         {renderRoutes(this.props.route.routes)}
