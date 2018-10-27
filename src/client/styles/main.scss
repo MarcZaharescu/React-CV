@@ -42,7 +42,6 @@ section {
   @media (min-width: 800px) {
   max-width: 1020px;
   }
-  margin: auto;
 }
 
 .left-column {
@@ -50,16 +49,17 @@ section {
     width: 25%;
     float: left;
   }
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .right-column {
   @media (min-width: 800px) {
     float: right;
     width: 75%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   margin: auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
+
 }

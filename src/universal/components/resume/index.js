@@ -73,7 +73,42 @@ const Resume = props => {
     }
   ];
 
-   
+  const skills = skillsElements.map(skill => {
+    return (
+      <li>
+        <h2> {skill.name}</h2>
+        <span className="resume__element__description"> {skill.level} </span>
+      </li>
+    );
+  });
+
+  const work = workElements.map(work => {
+    return (
+      <div className="resume__element-wrapper">
+        <h2 className= "resume__element__title">{work.company}</h2>
+        <p className="resume-items">
+          <span className="resume__element__paragraph resume__element__headline">{work.title}</span>
+          <span className="resume__element__paragraph">{"   •  "}</span>
+          <span className="resume__element__paragraph">{work.year}</span>
+        </p>
+        <span className="resume__element__description">{work.description}</span>
+      </div>
+    );
+  });
+
+  const education = educationElements.map(education => {
+    return (
+      <div className="resume__element-wrapper">
+        <h2 className= "resume__element__title">{education.school}</h2>
+        <p className="resume-items">
+          <span className="resume__element__paragraph resume__element__headline">{education.degree}</span>
+          <span className="resume__element__paragraph">{"   •  "}</span>
+          <span className="resume__element__paragraph">{education.year}</span>
+        </p>
+        <span className="resume__element__description">{education.description}</span>
+      </div>
+    );
+  });
 
 
   return (
@@ -81,66 +116,37 @@ const Resume = props => {
       <div className="section-row">
         {resumeSections.map(section => {
           return (
-            <div className="resume-row">
+            <div className="resume__section-wrapper">
               <div className="left-column">
-                <h3>
-                  <span>{section}</span>
+                <h3 className="resume__section__title-wrapper">
+                  <span className= "resume__section__title">{section}</span>
                 </h3>
               </div>
-              {section == "EDUCATION"
-                ? educationElements.map(education => {
-                    return (
-                      <div className="right-column">
-                        <div>
-                          <h2>{education.school}</h2>
-                          <p className="resume-items">
-                            <span>{education.degree}</span>
-                            <span> • </span>
-                            <span>{education.year}</span>
-                          </p>
-                          <span>{education.description}</span>
-                        </div>
-                      </div>
-                    );
-                  })
-                : null}
+              {section == "EDUCATION" ? (
+                <div className="right-column">{education}</div>
+              ) : null}
 
-              {section == "WORK"
-                ? workElements.map(work => {
-                    return (
-                      <div className="right-column">
-                        <div>
-                          <h2>{work.company}</h2>
-                          <p className="resume-items">
-                            <span>{work.title}</span>
-                            <span> • </span>
-                            <span>{work.year}</span>
-                          </p>
-                          <span>{work.description}</span>
-                        </div>
-                      </div>
-                    );
-                  })
-                : null}
+              {section == "WORK" ? (
+                <div className="right-column">{work}</div>
+              ) : null}
 
-                {section == "SKILLS"
-                  ? skillsElements.map(skill => {
-                      return (
-                        <div className="right-column">
-                          <ul className="skills">
-                            <li>
-                              <h2> {skill.name}</h2>
-                              <span> {skill.level} </span>
-                            </li>
-                            </ul>
-                        </div>
-                      );
-                    })
-                  : null}
+              {section == "SKILLS" ? (
+                <div className="right-column">
+                  <ul className="skills">{skills}</ul>
+                </div>
+              ) : null}
+
+                <hr className ="resume__section-separator"/>
             </div>
+
+
           );
+
+
         })}
-        </div>
+
+
+      </div>
     </section>
   );
 };

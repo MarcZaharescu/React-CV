@@ -1,41 +1,82 @@
+$color-cyan: #15c4ca;
+$color-darkbrown: #2b2b2b;
+$color-lightbrown: #6e7881;
+$color-lightgrey: #E6E8E6;
 
 #resume {
   color: black;
 }
 
-#resume h2 {
-  color: #2b2b2b;
-}
-
-#resume hr {
-  width: 100%;
-  padding: 1em 1em 1em 1em;
-}
-
-#resume span {
-  color: #6e7881;
-  font-weight: 100;
-}
-
-#resume h3 span {
-  border-bottom: 3px solid #11abb0;
-  color: #2b2b2b;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-#resume h2 {
-  font-size: 25px;
-  font-weight: 700;
-}
-
-#resume-separator hr {
-  padding: 2em;
-}
-
-#resume .resume-items {
+.resume-items {
   font-weight: 400;
-  font-style: italic;
   margin: auto;
   padding: 0em 0em 1em;
+  @media (max-width: 800px) {
+    text-align: center;
+    padding-bottom:3%;
+  }
+}
+.resume__section-wrapper{
+border-bottom: 1px solid $color-lightgrey;
+}
+
+.resume__element-wrapper {
+  padding-bottom: 5%;
+}
+
+.resume__subsection {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.resume__section-separator {
+  width: 100%;
+  border: none;
+}
+
+.resume__element__paragraph {
+
+  padding: 5px;
+  color: $color-lightbrown;
+  font-weight: 100;
+  font-size: calc(1.6rem + 0.25vw);
+  line-height: 30px;
+}
+.resume__element__headline {
+  padding-left: 0px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.resume__element__description {
+  color: $color-lightbrown;
+  font-weight: 100;
+  font-size: calc(1.4rem + 0.15vw);
+  line-height: 30px;
+}
+
+.resume__section__title {
+  border-bottom: 3px solid $color-cyan;
+  color: $color-darkbrown;
+  font-size: calc(1.6rem + 0.2vw);
+  font-weight: 500;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+
+}
+
+.resume__section__title-wrapper {
+  padding-top: 5%;
+  @media (max-width: 800px) {
+    text-align: center;
+  }
+}
+
+.resume__element__title {
+  font-size: calc(2rem + 0.5vw);
+  font-weight: 700;
+  color: $color-darkbrown;
+  @media (max-width: 800px) {
+    text-align: center;
+  }
 }
