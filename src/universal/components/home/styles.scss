@@ -23,18 +23,21 @@ header {
   font-size: calc(3rem + 4.2vw);
   font-weight: 700;
   margin: 0;
-  padding-top:15%;
+  padding-top: 15%;
 }
 
-
 .home__button {
-  padding-top: 15%;
+  visibility: hidden;
+  @media (min-width: 800px) {
+    padding-top: 15%;
+    visibility: visible;
+  }
 }
 
 .home__headline--bar {
   width: 45%;
   border: none;
-  padding:0.5%;
+  padding: 0.5%;
   height: 0.5px;
   //background: white;
 }

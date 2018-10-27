@@ -3,48 +3,59 @@
 }
 
 .aboutme__picture {
-  vertical-align: middle;
-  width: 70%;
-  height: auto;
+  width: 0%;
+  @media (min-width: 800px) {
+    padding-top: 10%;
+    vertical-align: middle;
+    width: 60%;
+    height: auto;
+  }
 }
 
 .aboutme__right-title {
   font-weight: 600;
-  font-size: 25px;
+  font-size: calc(2rem + 0.2vw);
   color: white;
 }
 
 .aboutme__right-span {
-  line-height: 30px;
+  line-height: calc(2rem + 1vw);
   margin: 1em 0em 2em 0em;
   font-weight: 100;
-  font-size: 16px;
+  font-size: calc(1.2rem + 0.2vw);
   color: #909294;
 }
 
 .aboutme__right-download-wrapper {
   margin-top: 1.6em;
   color: white;
-  float: right;
-  width: 60%;
-  text-align: center;
+  @media (min-width: 800px) {
+    float: right;
+    width: 60%;
+  }
 }
 
-.aboutme__right-download--text  {
+.aboutme__right-download--text {
   color: white;
   padding: 5px 5px 5px 15px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: calc(1rem + 0.5vw);
 }
 
 .aboutme__right-download--button {
   background: #505152;
-  padding: 8px 0px 8px 0px;
-  width: 50%;
+  padding: 15px 0px 15px 0px;
+  width: 100%;
+  @media (min-width: 800px) {
+    width: 50%;
+  }
   border-radius: 4px;
+  text-align: center;
 }
 
 .aboutme__right__contact {
-  float: left;
-  width: 40%;
+  @media (min-width: 800px) {
+    float: left;
+    width: 40%;
+  }
 }

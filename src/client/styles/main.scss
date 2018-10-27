@@ -37,26 +37,31 @@ section {
 .section-row {
   margin: auto;
   width: 96%;
+  max-width: 560px;
+  @media (min-width: 700px) {
   max-width: 1020px;
+  }
   margin: auto;
 }
 
 .left-column {
-  width: 25%;
-  float: left;
+  @media (min-width: 800px) {
+    width: 25%;
+    float: left;
+  }
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
 .right-column {
-  float: right;
-  width: 75%;
+  @media (min-width: 800px) {
+    float: right;
+    width: 75%;
+  }
   margin: auto;
   padding-top: 1em;
   padding-bottom: 1em;
 }
-
-
 
 // RESUME SECTION
 
