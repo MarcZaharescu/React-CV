@@ -1,6 +1,7 @@
 @import "../../universal/components/navigation/styles.scss";
 @import "../../universal/components/home/styles.scss";
 @import "../../universal/components/about/styles.scss";
+@import "../../universal/components/resume/styles.scss";
 
 html {
   font-size: 62.5%;
@@ -38,7 +39,7 @@ section {
   margin: auto;
   width: 96%;
   max-width: 560px;
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
   max-width: 1020px;
   }
   margin: auto;
@@ -61,47 +62,4 @@ section {
   margin: auto;
   padding-top: 1em;
   padding-bottom: 1em;
-}
-
-// RESUME SECTION
-
-#resume {
-  color: black;
-}
-
-#resume h2 {
-  color: #2b2b2b;
-}
-
-#resume hr {
-  width: 100%;
-  padding: 1em 1em 1em 1em;
-}
-
-#resume span {
-  color: #6e7881;
-  font-weight: 100;
-}
-
-#resume h3 span {
-  border-bottom: 3px solid #11abb0;
-  color: #2b2b2b;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-#resume h2 {
-  font-size: 25px;
-  font-weight: 700;
-}
-
-#resume-separator hr {
-  padding: 2em;
-}
-
-#resume .resume-items {
-  font-weight: 400;
-  font-style: italic;
-  margin: auto;
-  padding: 0em 0em 1em;
 }
