@@ -8,16 +8,16 @@ const Resume = props => {
       school: "University of Birmingham",
       degree: "Artificial Intelligence with Computer-Science Bsc",
       year: "2013 - 2017",
-      description: `Describe what I did here for about three lines.Describe what I
-    did here for about three lines.Describe what I did here for
+      description: `Describe what I did here for about three lines. Describe what I
+    did here for about three lines. Describe what I did here for
     about 2-3 lines`
     },
     {
       school: "Gheorghe Lazar National College",
       degree: "Maths with Computer-Science",
       year: "2009 - 2013",
-      description: `Describe what I did here for about three lines.Describe what I
-  did here for about three lines.Describe what I did here for
+      description: `Describe what I did here for about three lines. Describe what I
+  did here for about three lines. Describe what I did here for
   about 2-3 lines`
     }
   ];
@@ -27,8 +27,8 @@ const Resume = props => {
       company: "Tesco Plc",
       title: "Software Engineer",
       year: "2017 - present",
-      description: `Describe what I did here for about three lines.Describe what I
-    did here for about three lines.Describe what I did here for
+      description: `Describe what I did here for about three lines. Describe what I
+    did here for about three lines. Describe what I did here for
     about 2-3 lines`
     },
     {
@@ -75,9 +75,11 @@ const Resume = props => {
 
   const skills = skillsElements.map(skill => {
     return (
-      <li>
-        <h2> {skill.name}</h2>
-        <span className="resume__element__description"> {skill.level} </span>
+      <li className="skills__element">
+        <h2 className="skills__element__name"> {skill.name}</h2>
+        <span className="resume__element__description skills__element__level" style={{
+            'padding-right': `${skill.level}`
+        }}  >  </span>
       </li>
     );
   });
@@ -132,7 +134,7 @@ const Resume = props => {
 
               {section == "SKILLS" ? (
                 <div className="right-column">
-                  <ul className="skills">{skills}</ul>
+                  <ul className="skills__section__wrapper">{skills}</ul>
                 </div>
               ) : null}
 
