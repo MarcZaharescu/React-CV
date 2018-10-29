@@ -4,6 +4,7 @@
 @import "../../universal/components/resume/styles.scss";
 @import "../../universal/components/projects/styles.scss";
 @import "../../universal/components/contact/styles.scss";
+@import "../../universal/components/footer/styles.scss";
 
 html {
   font-size: 62.5%;
@@ -40,9 +41,9 @@ section {
 .section-row {
   margin: auto;
   width: 96%;
-  max-width: 560px;
+  max-width: 500px;
   @media (min-width: 800px) {
-  max-width: 1020px;
+    max-width: 1020px;
   }
 }
 
@@ -63,5 +64,4 @@ section {
     padding-bottom: 5%;
   }
   margin: auto;
-
 }

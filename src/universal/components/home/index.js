@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/fontawesome-free-solid";
-import Footer from "../footer";
+import Media from "../media";
 
 const socialMediaIcons = [
   {
@@ -66,11 +66,12 @@ class Home extends React.Component {
             {summary}
           </h3>
           <hr className="home__headline--bar" />
-          <Footer icons={socialMediaIcons} size={`${multiplier}em`} />
+          <Media icons={socialMediaIcons} size={`${multiplier}em`} />
           <div className="home__button">
             <FontAwesomeIcon
               icon="chevron-circle-down"
               size={`${buttonSize}x`}
+              color="#fffff"
             />
           </div>
         </div>

@@ -11,6 +11,7 @@ import About from "../about";
 import Resume from "../resume";
 import Projects from "../projects";
 import Contact from "../contact";
+import Footer from "../footer";
 
 export class App extends React.Component {
   constructor(...args) {
@@ -183,6 +184,7 @@ export class App extends React.Component {
         />
         <Projects projects={projectProps} />
         <Contact contactDetails={contactProps} />
+        <Footer />
 
         {renderRoutes(this.props.route.routes)}
       </div>

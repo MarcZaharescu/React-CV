@@ -1,0 +1,40 @@
+$color-lightgray1: #656565;
+$color-lightbrown1: #484242;
+$color-darkgray1: #383737;
+
+#footer {
+  background: $color-darkbrown1;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.footer__wrapper {
+  color: $color-lightgray1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer__button {
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+.footer__media {
+  font-size: 13px;
+}
+
+.footer__details {
+  padding-top: 25px;
+  display: flex;
+  text-align: center;
+
+  span {
+    padding:5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: $color-darkgray1;
+  }
+}
