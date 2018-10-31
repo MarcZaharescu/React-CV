@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 class Navigation extends React.Component {
   constructor(...args) {
@@ -55,9 +56,9 @@ class Navigation extends React.Component {
           {links.map(field => {
             return (
               <li key={field.text} className="navigation__list-item">
-                <Link className="navigation__link" to={field.to}>
+                <NavLink className="navigation__link" to={field.to}>
                   {field.text}
-                </Link>
+                </NavLink>
               </li>
             );
           })}

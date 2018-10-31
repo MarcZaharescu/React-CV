@@ -5,6 +5,7 @@ import { bindActionCreators } from "redux";
 import { Link } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 
+
 import Home from "../home";
 import Navigation from "../navigation";
 import About from "../about";
@@ -20,11 +21,11 @@ export class App extends React.Component {
 
   render() {
     const navigationLinks = [
-      { to: "/home", text: "HOME" },
-      { to: "/about", text: "ABOUT" },
-      { to: "/resume", text: "RESUME" },
-      { to: "/projects", text: "PROJECTS" },
-      { to: "/contact", text: "CONTACT" }
+      { to: "/#home", text: "HOME" },
+      { to: "/#about-me", text: "ABOUT" },
+      { to: "/#resume", text: "RESUME" },
+      { to: "/#projects", text: "PROJECTS" },
+      { to: "/#contact", text: "CONTACT" }
     ];
 
     const homeProps = {
