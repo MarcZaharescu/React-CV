@@ -1,12 +1,12 @@
 import express from "express";
-import { getSendEmailPage } from "./sendEmail";
+import { postSendEmailPage } from "./sendEmail";
 
 const BASE_PATH = "/";
 
 const baseRouter = express.Router();
 const appRouter = express.Router();
 
-appRouter.get("/", getSendEmailPage);
+appRouter.post("/", postSendEmailPage);
 
 baseRouter.use(`/mail`, appRouter);
 

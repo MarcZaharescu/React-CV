@@ -42,7 +42,6 @@ class Home extends React.Component {
 
   componentDidMount() {
     window.addEventListener("resize", this.setMultiplier);
-    console.log('here', this.aboutRef)
   }
   componentWillMount() {
     window.addEventListener("resize", this.setMultiplier);

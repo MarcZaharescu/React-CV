@@ -16,7 +16,6 @@ export const renderServer = (routes, context, history, sheet) =>
   );
 
 export const renderClient = (store, routes, history, context) => {
-  console.log("rendering the client");
   ReactDOM.render(
     <Provider store={store}>
       <ConnectedRouter context={context} history={history}>

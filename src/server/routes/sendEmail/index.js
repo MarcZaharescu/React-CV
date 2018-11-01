@@ -1,37 +1,35 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 
+export async function postSendEmailPage(req, res, next) {
+  const { name, email, subject, message } = req.body;
 
-export async function getSendEmailPage(req, res, next) {
-
+  console.log('creds', req.body);
 
   nodemailer.createTestAccount((err, account) => {
+    let transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 587,
+      secure: false,
+      auth: {
+        user: "marczaharescusmtp@gmail.com",
+        pass: "marcsmtp"
+      }
+    });
 
-      let transporter = nodemailer.createTransport({
-          host: 'smtp.gmail.com',
-          port: 587,
-          secure: false,
-          auth: {
-              user: "marczaharescusmtp@gmail.com",
-              pass: "marcsmtp"
-          }
-      });
+    let mailOptions = {
+      from: `${name} <${email}>`,
+      to: "zaharescumarc10@gmail.com",
+      subject: `${subject}`,
+      text: `${message}`,
+      html: `<p>${message}</p>`
+    };
 
-
-      let mailOptions = {
-          from: '"Testy Test 👻" <foo@example.com>',
-          to: 'zaharescumarc10@gmail.com',
-          subject: 'Hello ✔',
-          text: 'Hello world?',
-          html: '<b>Hello world?</b>'
-      };
-
-
-      transporter.sendMail(mailOptions, (error, info) => {
-          if (error) {
-              return console.log(error);
-          }
-          console.log('Message sent: %s', info.messageId);
-          res.redirect('http://localhost:3030/');
-      });
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        return console.log(error);
+      }
+      console.log("Message sent: %s", info.messageId);
+      res.redirect("http://localhost:3030/");
+    });
   });
 }
