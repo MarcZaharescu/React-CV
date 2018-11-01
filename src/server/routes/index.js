@@ -1,13 +1,13 @@
 import express from "express";
-import { getHomePage } from "./home";
+import { getSendEmailPage } from "./sendEmail";
 
 const BASE_PATH = "/";
 
 const baseRouter = express.Router();
 const appRouter = express.Router();
 
-appRouter.get("/", getHomePage);
+appRouter.get("/", getSendEmailPage);
 
-baseRouter.use(`/locale`, appRouter);
+baseRouter.use(`/mail`, appRouter);
 
 export default baseRouter;

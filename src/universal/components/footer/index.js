@@ -28,18 +28,18 @@ const Footer = props => {
     }
   ];
 
-  const scrollToDomRef = () => {
+  const scrollToHeader = () => {
     window.scrollTo(0, 0);
   };
 
   return (
-    <section id="footer">
+    <section id="footer" className="no-overflow">
       <div className="footer__wrapper">
         <div className="footer__button">
           <FontAwesomeIcon
             icon="chevron-circle-up"
             size={`4x`}
-            onClick={scrollToDomRef}
+            onClick={scrollToHeader}
           />
         </div>
         <div className="footer__media">

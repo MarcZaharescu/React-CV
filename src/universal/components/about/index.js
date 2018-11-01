@@ -6,8 +6,15 @@ import { FaDownload } from "@fortawesome/fontawesome-free-solid";
 class About extends React.Component {
   constructor(props) {
     super(props);
-    this.aboutRef = React.createRef();
+    this.downloadResume = this.downloadResume.bind(this);
   }
+
+  downloadResume(){
+   var element = document.createElement("a");
+   element.href = require("../../../public/documents/Marc Theodor Zaharescu - CV.pdf")
+   element.download = "Marc Theodor Zaharescu - CV.pdf";
+   element.click();
+ }
 
   render() {
     const {
@@ -21,7 +28,7 @@ class About extends React.Component {
       email
     } = this.props;
     return (
-      <section id="about-me" ref={this.aboutRef}>
+      <section id="about-me">
         <div className="section-row">
           <div className="left-column">
             <img
@@ -48,11 +55,11 @@ class About extends React.Component {
               </p>
             </div>
             <div className="aboutme__right-download-wrapper">
-              <div className="aboutme__right-download--button">
+              <div onClick={this.downloadResume} className="aboutme__right-download--button">
                 <FontAwesomeIcon icon="download" size="2x" />
-                <span className="aboutme__right-download--text">
+                <a  className="aboutme__right-download--text">
                   Download Resume
-                </span>
+                </a>
               </div>
             </div>
           </div>

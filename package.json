@@ -19,6 +19,8 @@
     "i": "^0.3.6",
     "immutable": "^3.8.1",
     "jquery": "^3.2.1",
+    "node-mailjet": "^3.3.1",
+    "nodemailer": "^4.6.8",
     "nodemon": "^1.18.4",
     "npm": "^6.4.1",
     "prettify": "^0.1.7",

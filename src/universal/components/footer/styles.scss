@@ -1,9 +1,10 @@
 $color-lightgray1: #656565;
 $color-lightbrown1: #484242;
 $color-darkgray1: #383737;
+$color-darkbrown2: #171616;
 
 #footer {
-  background: $color-darkbrown1;
+  background: $color-darkbrown2;
   padding-bottom: 80px;
   padding-top: 80px;
 }
@@ -19,11 +20,17 @@ $color-darkgray1: #383737;
 
 .footer__button {
   padding-bottom: 20px;
-  font-size: 16px;
+  position: relative;
+  top: -105;
+  font-size: 12px;
 }
 
 .footer__media {
   font-size: 13px;
+}
+
+.no-overflow{
+  overflow: visible
 }
 
 .footer__details {

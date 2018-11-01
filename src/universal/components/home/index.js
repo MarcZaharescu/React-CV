@@ -37,7 +37,7 @@ class Home extends React.Component {
       multiplier: 4
     };
     this.setMultiplier = this.setMultiplier.bind(this);
-    this.scrollToDomRef = this.scrollToDomRef.bind(this);
+    this.scrollToAboutMe = this.scrollToAboutMe.bind(this);
   }
 
   componentDidMount() {
@@ -55,9 +55,7 @@ class Home extends React.Component {
     this.setState({ multiplier: window.innerWidth / 400 });
   }
 
-  scrollToDomRef()  {
-      // const myDomNode = ReactDOM.findDOMNode(this.aboutRef.current)
-      // myDomNode.scrollIntoView()
+  scrollToAboutMe()  {
        window.scrollTo(0, window.innerHeight)
      }
 
@@ -82,7 +80,7 @@ class Home extends React.Component {
             <FontAwesomeIcon
               icon="chevron-circle-down"
               size={`${buttonSize}x`}
-              onClick={this.scrollToDomRef}
+              onClick={this.scrollToAboutMe}
             />
 
           </div>

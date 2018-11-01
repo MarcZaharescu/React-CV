@@ -29,8 +29,9 @@ header {
 .home__button {
   visibility: hidden;
   @media (min-width: 800px) {
-    padding-top: 15%;
+    padding-top: 12%;
     visibility: visible;
+    font-size: 12px;
   }
 }
 
