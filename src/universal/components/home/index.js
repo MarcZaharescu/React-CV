@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleDown } from "@fortawesome/fontawesome-free-solid";
 import Media from "../media";
-import scrollToComponent from 'react-scroll-to-component';
+import scrollToComponent from "react-scroll-to-component";
 
 const socialMediaIcons = [
   {
@@ -35,9 +35,9 @@ class Home extends React.Component {
     this.scrollToAboutMe = this.scrollToAboutMe.bind(this);
   }
 
-  scrollToAboutMe()  {
-       window.scrollTo(0, window.innerHeight)
-     }
+  scrollToAboutMe() {
+    window.scrollTo(0, window.innerHeight);
+  }
 
   render() {
     const { name, profession, location, summary } = this.props;
@@ -52,15 +52,14 @@ class Home extends React.Component {
             {summary}
           </h3>
           <hr className="home__headline--bar" />
-          <Media icons={socialMediaIcons} size="3em" color="#fff"/>
+          <Media icons={socialMediaIcons} size="3em" color="#fff" />
           <div type="button" className="home__button">
-
-            <FontAwesomeIcon className="home__button--icon"
+            <FontAwesomeIcon
+              className="home__button--icon"
               icon="chevron-circle-down"
-              size='3x'
+              size="3x"
               onClick={this.scrollToAboutMe}
             />
-
           </div>
         </div>
       </section>

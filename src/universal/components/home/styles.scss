@@ -1,9 +1,11 @@
+$color-lightgray2: #868383;
+
 header {
   height: 100%;
   min-height: 500px;
   width: 100%;
-  background: url("https://unsplash.it/1080/720/?image=377") no-repeat fixed
-    center / cover;
+  background: url("https://unsplash.it/1080/720/?image=377") no-repeat center /
+    cover;
   text-align: center;
   overflow: hidden;
 }
@@ -52,9 +54,13 @@ header {
 }
 
 .home__button--icon {
+  backface-visibility: hidden;
   cursor: pointer;
 }
 .home__button--icon:hover {
+  backface-visibility: hidden;
+  transition: color 0.5s ease;
+  color: $color-lightgray2;
   padding-top: 5px;
   animation: smoothPadding 0.8s ease-in infinite;
 }

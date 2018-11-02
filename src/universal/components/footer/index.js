@@ -36,7 +36,7 @@ const Footer = props => {
     <section id="footer" className="no-overflow">
       <div className="footer__wrapper">
         <div className="footer__button">
-          <FontAwesomeIcon
+          <FontAwesomeIcon className="footer__button-icon"
             icon="chevron-circle-up"
             size={`4x`}
             onClick={scrollToHeader}

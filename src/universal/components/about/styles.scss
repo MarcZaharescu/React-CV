@@ -1,3 +1,5 @@
+$color-darkgrey3: #4e4c4c;
+
 #about-me {
   background: #2b2b2b;
 }
@@ -43,14 +45,27 @@
 }
 
 .aboutme__right-download--button {
+  cursor: pointer;
   background: #505152;
   padding: 15px 0px 15px 0px;
   width: 100%;
   @media (min-width: 800px) {
     width: 50%;
   }
-  border-radius: 4px;
+  border-radius: 10px;
   text-align: center;
+  box-shadow: 0 3px #999;
+}
+
+.aboutme__right-download--button:active {
+  background-color: $color-darkgrey3;
+  box-shadow: 0 5px #777;
+  transform: translateY(4px);
+}
+
+.aboutme__right-download--button:hover{
+  background: $color-darkgrey3;
+
 }
 
 .aboutme__right__contact {

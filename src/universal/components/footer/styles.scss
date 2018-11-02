@@ -2,6 +2,7 @@ $color-lightgray1: #656565;
 $color-lightbrown1: #484242;
 $color-darkgray1: #383737;
 $color-darkbrown2: #171616;
+$color-lightgray2: #868383;
 
 #footer {
   background: $color-darkbrown2;
@@ -25,12 +26,21 @@ $color-darkbrown2: #171616;
   font-size: 12px;
 }
 
+.footer__button-icon {
+  cursor: pointer;
+}
+.footer__button-icon:hover {
+  backface-visibility: hidden;
+  transition: color 0.5s ease;
+  color: $color-lightgray2;
+}
+
 .footer__media {
   font-size: 13px;
 }
 
-.no-overflow{
-  overflow: visible
+.no-overflow {
+  overflow: visible;
 }
 
 .footer__details {
@@ -39,7 +49,7 @@ $color-darkbrown2: #171616;
   text-align: center;
 
   span {
-    padding:5px;
+    padding: 5px;
     font-size: 14px;
     letter-spacing: 1px;
     color: $color-darkgray1;
