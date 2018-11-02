@@ -4,8 +4,8 @@ import SocialMediaIcons from "react-social-media-icons";
 
 const Media = ({ icons, size, color }) => {
   return (
-    <ul className="social-media">
-      <SocialMediaIcons icons={icons} iconSize={size} iconColor={color} />
+    <ul className="social__media-wrapper">
+      <SocialMediaIcons  className="social__media-icons" icons={icons} iconSize={size} iconColor={color} />
     </ul>
   );
 };

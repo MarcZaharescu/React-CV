@@ -32,26 +32,7 @@ const socialMediaIcons = [
 class Home extends React.Component {
   constructor(...args) {
     super(...args);
-
-    this.state = {
-      multiplier: 4
-    };
-    this.setMultiplier = this.setMultiplier.bind(this);
     this.scrollToAboutMe = this.scrollToAboutMe.bind(this);
-  }
-
-  componentDidMount() {
-    window.addEventListener("resize", this.setMultiplier);
-  }
-  componentWillMount() {
-    window.addEventListener("resize", this.setMultiplier);
-  }
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.setMultiplier);
-  }
-
-  setMultiplier() {
-    this.setState({ multiplier: window.innerWidth / 400 });
   }
 
   scrollToAboutMe()  {
@@ -60,8 +41,6 @@ class Home extends React.Component {
 
   render() {
     const { name, profession, location, summary } = this.props;
-    const { multiplier } = this.state;
-    const buttonSize = Math.round(multiplier);
 
     return (
       <section id="home">
@@ -73,12 +52,12 @@ class Home extends React.Component {
             {summary}
           </h3>
           <hr className="home__headline--bar" />
-          <Media icons={socialMediaIcons} size={`${multiplier}em`} color="#fff"/>
-          <div className="home__button">
+          <Media icons={socialMediaIcons} size="3em" color="#fff"/>
+          <div type="button" className="home__button">
 
-            <FontAwesomeIcon
+            <FontAwesomeIcon className="home__button--icon"
               icon="chevron-circle-down"
-              size={`${buttonSize}x`}
+              size='3x'
               onClick={this.scrollToAboutMe}
             />
 

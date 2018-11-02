@@ -9,14 +9,18 @@ header {
 }
 
 .home__headline--summary {
-  font-size: calc(1rem + 0.8vw);
+  font-size: calc(1.2rem + 0.6vw);
   font-weight: 500;
   color: #b8b9ba;
   padding: 20px 40px 20px 40px;
-  margin: auto;
-  width: 45%;
   letter-spacing: 0.2rem;
   line-height: calc(1rem + 1.7vw);
+  width: 60%;
+  margin: auto;
+  @media (min-width: 800px) {
+    width: 45%;
+    font-size: calc(1rem + 0.8vw);
+  }
 }
 
 .home__headline--title {
@@ -31,8 +35,28 @@ header {
   @media (min-width: 800px) {
     padding-top: 12%;
     visibility: visible;
-    font-size: 12px;
+    font-size: 16px;
   }
+}
+
+@keyframes smoothPadding {
+  40% {
+    padding-top: 5px;
+  }
+  80% {
+    padding-top: 2px;
+  }
+  95% {
+    padding-top: 4.5px;
+  }
+}
+
+.home__button--icon {
+  cursor: pointer;
+}
+.home__button--icon:hover {
+  padding-top: 5px;
+  animation: smoothPadding 0.8s ease-in infinite;
 }
 
 .home__headline--bar {

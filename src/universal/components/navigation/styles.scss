@@ -19,14 +19,20 @@ $navigation-background: #4e4c4c;
 
 .navigation__list-item {
   display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .navigation__link {
   font-size: 0rem;
   @media (min-width: 500px) {
-    font-size: calc(0.4rem + 0.7vw)
+    font-size: calc(0.4rem + 0.6vw)
   }
   text-decoration: none;
+}
+
+.navigation__link:hover {
+ color:grey;
 }
 
 .nav-hide {

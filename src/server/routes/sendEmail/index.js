@@ -18,7 +18,7 @@ export async function postSendEmailPage(req, res, next) {
 
     let mailOptions = {
       from: `${name} <${email}>`,
-      to: "zaharescumarc10@gmail.com",
+      to: "marczaharescusmtp@gmail.com",
       subject: `${subject}`,
       text: `${message}`,
       html: `<p>${message}</p>`
