@@ -3,11 +3,20 @@ $color-darkbrown1: #1b1a1c;
 $color-darkbrown2: #312c2c;
 $color-lightwhite1: #ebeeee;
 $color-lightbrown1: #484242;
+$color-lightred: #ce1a1ab5;
 
 #contact {
   background: $color-darkbrown1;
   padding-bottom: 80px;
   padding-top: 80px;
+}
+.valid {
+  border: 0;
+  border-width: 0px;
+}
+.invalid {
+  border-width: 2px;
+  border-color: $color-lightred;
 }
 
 .contact__headline {
@@ -51,7 +60,6 @@ $color-lightbrown1: #484242;
   font-size: 15px;
   font-weight: 400;
   padding: 2.2%;
-  border: 0;
 }
 
 .contact__form__field-label {
@@ -69,6 +77,8 @@ $color-lightbrown1: #484242;
 }
 
 .contact__form__submit {
+  cursor: pointer;
+  box-shadow: 0 3px #999;
   background: $color-darkbrown1;
   border: 0;
   color: white;
@@ -80,8 +90,15 @@ $color-lightbrown1: #484242;
   }
 }
 
+.contact__form__submit:active {
+  background-color: $color-darkgrey3;
+  box-shadow: 0 5px #777;
+  transform: translateY(4px);
+}
+
 .contact__form__field-input {
-  border: 0;
+  color: white;
+  font-size: 14px;
   background: $color-darkbrown2;
   padding: 17px 15px;
   width: 100%;

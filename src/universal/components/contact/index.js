@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/fontawesome-free-solid";
+import { validateField } from "../../utils/validation";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -11,16 +12,43 @@ class Contact extends React.Component {
       name: "",
       email: "",
       subject: "",
-      message: ""
+      message: "",
+      validname: false,
+      validemail: false,
+      validsubject: false,
+      validmessage: false,
+      nameFocused: false,
+      emailFocused: false,
+      subjectFocused: false,
+      messageFocused: false,
+      formValid: false
     };
 
+    this.handleInput = this.handleInput.bind(this);
+    this.handleValidation = this.handleValidation.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleInput(field) {
+    const name = field.target.name;
+    const value = field.target.value;
+    this.setState({ [name]: value });
+    this.setState({[`${name}Focused`]: true});
+
+    const validatedField = validateField({name, value, valid: false });
+    this.setState({[`valid${validatedField.name}`]:  validatedField.valid})
+    this.handleValidation();
+  }
+
+  handleValidation() {
+   const isFormValid = this.state.validname && this.state.validemail && this.state.validmessage && this.state.validsubject;
+    isFormValid
+      ? this.setState({ formValid: true })
+      : this.setState({ formValid: false });
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log("subject:", this.state.subject);
-    console.log("message:", this.state.message);
     fetch("/mail", {
       method: "post",
       headers: {
@@ -56,79 +84,68 @@ class Contact extends React.Component {
             <form action="" method="post" id="contactForm" name="contactForm">
               <fieldset className="contact__form__fieldset">
                 <div className="contact__form__field-wrapper">
-                  <label
-                    className="contact__form__field-label"
-                    for="contactname"
-                  >
+                  <label className="contact__form__field-label" for="name">
                     Name <span class="required">*</span>
                   </label>
                   <input
                     value={this.state.name}
-                    onChange={ev => this.setState({ name: ev.target.value })}
-                    className="contact__form__field-input"
+                    onChange={event => this.handleInput(event)}
+                    className={"contact__form__field-input " + (this.state.nameFocused ? (this.state.validname  ? "valid" : "invalid"): "valid" )}
                     type="text"
                     size="35"
-                    id="contactName"
-                    name="contactName"
+                    id="name"
+                    name="name"
                   />
                 </div>
 
                 <div className="contact__form__field-wrapper">
-                  <label
-                    className="contact__form__field-label"
-                    for="contactEmail"
-                  >
+                  <label className="contact__form__field-label" for="email">
                     Email <span class="required">*</span>
                   </label>
                   <input
                     value={this.state.email}
-                    onChange={ev => this.setState({ email: ev.target.value })}
-                    className="contact__form__field-input"
+                    onChange={event => this.handleInput(event)}
+                    className={"contact__form__field-input " +  (this.state.emailFocused ? ( this.state.validemail   ? "valid" : "invalid"): "valid")}
                     type="text"
                     size="35"
-                    id="contactEmail"
-                    name="contactEmail"
+                    id="email"
+                    name="email"
                   />
                 </div>
 
                 <div className="contact__form__field-wrapper">
-                  <label
-                    className="contact__form__field-label"
-                    for="contactSubject"
-                  >
+                  <label className="contact__form__field-label" for="subject">
                     Subject
                   </label>
                   <input
                     value={this.state.subject}
-                    onChange={ev => this.setState({ subject: ev.target.value })}
-                    className="contact__form__field-input"
+                    onChange={event => this.handleInput(event)}
+                    className={"contact__form__field-input " +  (this.state.subjectFocused ? (this.state.validsubject   ? "valid" : "invalid"): "valid")}
                     type="text"
                     size="35"
-                    id="contactSubject"
-                    name="contactSubject"
+                    id="subject"
+                    name="subject"
                   />
                 </div>
 
                 <div className="contact__form__field-wrapper">
-                  <label
-                    className="contact__form__field-label"
-                    for="contactMessage"
-                  >
+                  <label className="contact__form__field-label" for="message">
                     Message <span class="required">*</span>
                   </label>
                   <textarea
                     value={this.state.message}
-                    onChange={ev => this.setState({ message: ev.target.value })}
-                    className="contact__form__field-input"
+                    onChange={event => this.handleInput(event)}
+                    className={"contact__form__field-input " +  (this.state.messageFocused ? (this.state.validmessage  ? "valid" : "invalid"): "valid")}
                     cols="50"
                     rows="15"
-                    id="contactMessage"
-                    name="contactMessage"
+                    id="message"
+                    name="message"
                   />
                 </div>
 
                 <div className="contact__form__field-wrapper">
                   <button
+                    disabled={!this.state.formValid}
                     onClick={this.handleSubmit}
                     className="contact__form__submit"
                   >
