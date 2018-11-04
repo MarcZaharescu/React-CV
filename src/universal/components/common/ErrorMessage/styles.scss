@@ -1,0 +1,19 @@
+$color-lightred: #ce1a1ab5;
+
+.validation__errors {
+  position: absolute;
+  right: 3%;
+  top: -7%;
+
+  @media (min-width: 800px) {
+    left: 22%;
+    top: -16%;
+  }
+
+  p {
+    font-size: 1.3rem;
+    color: $color-lightred;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+}

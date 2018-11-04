@@ -1,0 +1,41 @@
+$color-lightred: #deb1b1b5;
+$color-lightred1: #c55454b8;
+
+$color-lightgreen: #b1deb7b5;
+$color-lightgreen1: #59ab61b8;
+
+.banner {
+  position: absolute;
+  text-align: center;
+  right: 3%;
+  left: 2%;
+  top: 107%;
+
+  @media (min-width: 800px) {
+    left: 20.5%;
+    top: -30%;
+    right: 31.5%;
+  }
+
+  p {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+}
+
+.type__success {
+  background: $color-lightgreen1;
+
+  p {
+    color: $color-lightgreen;
+  }
+}
+
+.type__error {
+  background: $color-lightred1;
+
+  p {
+    color: $color-lightred;
+  }
+}

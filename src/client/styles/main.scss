@@ -1,4 +1,3 @@
-@import "../../universal/components/navigation/styles.scss";
 @import "../../universal/components/home/styles.scss";
 @import "../../universal/components/about/styles.scss";
 @import "../../universal/components/resume/styles.scss";
@@ -6,6 +5,9 @@
 @import "../../universal/components/contact/styles.scss";
 @import "../../universal/components/footer/styles.scss";
 @import "../../universal/components/media/styles.scss";
+@import "../../universal/components/navigation/styles.scss";
+@import "../../universal/components/common/ErrorMessage/styles.scss";
+@import "../../universal/components/common/Banner/styles.scss";
 
 html {
   font-size: 62.5%;

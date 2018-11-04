@@ -4,7 +4,7 @@ $color-darkbrown2: #312c2c;
 $color-lightwhite1: #ebeeee;
 $color-lightbrown1: #484242;
 $color-lightred: #ce1a1ab5;
-
+$color-darkgray3: #656565;
 #contact {
   background: $color-darkbrown1;
   padding-bottom: 80px;
@@ -60,6 +60,25 @@ $color-lightred: #ce1a1ab5;
   font-size: 15px;
   font-weight: 400;
   padding: 2.2%;
+  position: relative;
+
+  &:nth-child(4n) {
+    top: -1%;
+    .validation__errors {
+      @media (min-width: 800px) {
+        top: -3%;
+      }
+    }
+  }
+
+  &:nth-child(5n) {
+    .validation__errors {
+      top: -8%;
+      @media (min-width: 800px) {
+        top: -50%;
+      }
+    }
+  }
 }
 
 .contact__form__field-label {
@@ -78,7 +97,6 @@ $color-lightred: #ce1a1ab5;
 
 .contact__form__submit {
   cursor: pointer;
-  box-shadow: 0 3px #999;
   background: $color-darkbrown1;
   border: 0;
   color: white;
@@ -86,10 +104,14 @@ $color-lightred: #ce1a1ab5;
   font-weight: 600;
   letter-spacing: 1px;
   @media (min-width: 800px) {
-    padding-left: 180px;
+    position: absolute;
+    left: 21%;
+    top: 90%;
   }
 }
-
+.contact__form__submit:hover {
+  background: $color-darkgray3;
+}
 .contact__form__submit:active {
   background-color: $color-darkgrey3;
   box-shadow: 0 5px #777;
