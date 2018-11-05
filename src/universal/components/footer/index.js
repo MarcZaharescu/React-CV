@@ -5,28 +5,6 @@ import Media from "../media";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleUp } from "@fortawesome/fontawesome-free-solid";
 const Footer = props => {
-  const socialMediaIcons = [
-    {
-      url: "https://www.instagram.com/marczaha/",
-      className: "fa-instagram"
-    },
-    {
-      url: "https://www.facebook.com/marc.zaharescu",
-      className: "fa-facebook"
-    },
-    {
-      url: "https://github.com//MarcZaharescu",
-      className: "fa-github"
-    },
-    {
-      url: "https://linkedin.com/in/marczaharescu/",
-      className: "fa-linkedin"
-    },
-    {
-      url: "https://www.twitter.com/marczaharescu",
-      className: "fa-twitter"
-    }
-  ];
 
   const scrollToHeader = () => {
     window.scrollTo(0, 0);
@@ -43,7 +21,7 @@ const Footer = props => {
           />
         </div>
         <div className="footer__media">
-          <Media icons={socialMediaIcons} size={`3em`} color={"#656565"} />
+          <Media  size={`3em`} color={"#656565"} />
         </div>
         <div className="footer__details">
           <span>{"© Copyright 2018 Marc Zaharescu"}</span>

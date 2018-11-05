@@ -6,29 +6,6 @@ import { faChevronCircleDown } from "@fortawesome/fontawesome-free-solid";
 import Media from "../media";
 import scrollToComponent from "react-scroll-to-component";
 
-const socialMediaIcons = [
-  {
-    url: "https://www.instagram.com/marczaha/",
-    className: "fa-instagram"
-  },
-  {
-    url: "https://www.facebook.com/marc.zaharescu",
-    className: "fa-facebook"
-  },
-  {
-    url: "https://github.com//MarcZaharescu",
-    className: "fa-github"
-  },
-  {
-    url: "https://linkedin.com/in/marczaharescu/",
-    className: "fa-linkedin"
-  },
-  {
-    url: "https://www.twitter.com/marczaharescu",
-    className: "fa-twitter"
-  }
-];
-
 class Home extends React.Component {
   constructor(...args) {
     super(...args);
@@ -52,7 +29,7 @@ class Home extends React.Component {
             {summary}
           </h3>
           <hr className="home__headline--bar" />
-          <Media icons={socialMediaIcons} size="3em" color="#fff" />
+          <Media size="3em" color="#fff" />
           <div type="button" className="home__button">
             <FontAwesomeIcon
               className="home__button--icon"

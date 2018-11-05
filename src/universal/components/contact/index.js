@@ -5,6 +5,7 @@ import { faEnvelope } from "@fortawesome/fontawesome-free-solid";
 import { validateField } from "../../utils/validation";
 import ErrorMessage from "../common/ErrorMessage";
 import Banner from "../common/Banner";
+import data from "../../../data";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -70,7 +71,15 @@ class Contact extends React.Component {
         })
       });
 
-      this.setState({ emailSent: true });
+      this.setState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+
+        formValid: false,
+        emailSent: true
+      });
     } else {
       this.setState({ emailSent: false });
     }
@@ -88,9 +97,7 @@ class Contact extends React.Component {
               </div>
               <div className="contact__wrapper_header-text">
                 <p>
-                  {`Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                  eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                  voluptatem quia voluptas sit aspernatur aut odit aut fugit.`}
+                  {contactDetails.heading}
                 </p>
               </div>
             </div>
@@ -101,7 +108,7 @@ class Contact extends React.Component {
                     Name <span class="required">*</span>
                   </label>
                   {this.state.validname === false ? (
-                    <ErrorMessage message="* Please input a name" />
+                    <ErrorMessage message={data.common.messages.nameValidationError} />
                   ) : null}
                   <input
                     value={this.state.name}
@@ -126,7 +133,7 @@ class Contact extends React.Component {
                     Email <span class="required">*</span>
                   </label>
                   {this.state.validemail === false ? (
-                    <ErrorMessage message="* Please input a valid email" />
+                    <ErrorMessage message={data.common.messages.emailValidationError} />
                   ) : null}
                   <input
                     value={this.state.email}
@@ -151,7 +158,7 @@ class Contact extends React.Component {
                     Subject
                   </label>
                   {this.state.validsubject === false ? (
-                    <ErrorMessage message="* Please input a valid subject" />
+                    <ErrorMessage message={data.common.messages.subjectValidationError} />
                   ) : null}
                   <input
                     value={this.state.subject}
@@ -176,7 +183,7 @@ class Contact extends React.Component {
                     Message <span class="required">*</span>
                   </label>
                   {this.state.validmessage === false ? (
-                    <ErrorMessage message="* Please input a message max 600 chars" />
+                    <ErrorMessage message={data.common.messages.messageValidationError} />
                   ) : null}
                   <textarea
                     value={this.state.message}
@@ -200,12 +207,12 @@ class Contact extends React.Component {
                   {this.state.emailSent !== undefined ? (
                     this.state.emailSent === false ? (
                       <Banner
-                        message=" Unfortunately the email could not be sent"
+                        message={data.common.messages.banner.error}
                         type="error"
                       />
                     ) : (
                       <Banner
-                        message=" The email has been sent"
+                        message={data.common.messages.banner.succesful}
                         type="success"
                       />
                     )
