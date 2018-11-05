@@ -9,12 +9,12 @@ class About extends React.Component {
     this.downloadResume = this.downloadResume.bind(this);
   }
 
-  downloadResume(){
-   var element = document.createElement("a");
-   element.href = require("../../../public/documents/Marc Theodor Zaharescu - CV.pdf")
-   element.download = "Marc Theodor Zaharescu - CV.pdf";
-   element.click();
- }
+  downloadResume() {
+    var element = document.createElement("a");
+    element.href = require("../../../public/documents/Marc Theodor Zaharescu - CV.pdf");
+    element.download = "Marc Theodor Zaharescu - CV.pdf";
+    element.click();
+  }
 
   render() {
     const {
@@ -55,11 +55,12 @@ class About extends React.Component {
               </p>
             </div>
             <div className="aboutme__right-download-wrapper">
-              <div onClick={this.downloadResume} className="aboutme__right-download--button">
+              <div
+                onClick={this.downloadResume}
+                className="aboutme__right-download--button"
+              >
                 <FontAwesomeIcon icon="download" size="2x" />
-                <a  className="aboutme__right-download--text">
-                  Download Resume
-                </a>
+                <a className="aboutme__right-download--text">Download Resume</a>
               </div>
             </div>
           </div>

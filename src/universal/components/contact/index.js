@@ -96,9 +96,7 @@ class Contact extends React.Component {
                 <FontAwesomeIcon icon="envelope" size={`4x`} />
               </div>
               <div className="contact__wrapper_header-text">
-                <p>
-                  {contactDetails.heading}
-                </p>
+                <p>{contactDetails.heading}</p>
               </div>
             </div>
             <form action="" method="post" id="contactForm" name="contactForm">
@@ -108,7 +106,9 @@ class Contact extends React.Component {
                     Name <span class="required">*</span>
                   </label>
                   {this.state.validname === false ? (
-                    <ErrorMessage message={data.common.messages.nameValidationError} />
+                    <ErrorMessage
+                      message={data.common.messages.nameValidationError}
+                    />
                   ) : null}
                   <input
                     value={this.state.name}
@@ -133,7 +133,9 @@ class Contact extends React.Component {
                     Email <span class="required">*</span>
                   </label>
                   {this.state.validemail === false ? (
-                    <ErrorMessage message={data.common.messages.emailValidationError} />
+                    <ErrorMessage
+                      message={data.common.messages.emailValidationError}
+                    />
                   ) : null}
                   <input
                     value={this.state.email}
@@ -158,7 +160,9 @@ class Contact extends React.Component {
                     Subject
                   </label>
                   {this.state.validsubject === false ? (
-                    <ErrorMessage message={data.common.messages.subjectValidationError} />
+                    <ErrorMessage
+                      message={data.common.messages.subjectValidationError}
+                    />
                   ) : null}
                   <input
                     value={this.state.subject}
@@ -183,7 +187,9 @@ class Contact extends React.Component {
                     Message <span class="required">*</span>
                   </label>
                   {this.state.validmessage === false ? (
-                    <ErrorMessage message={data.common.messages.messageValidationError} />
+                    <ErrorMessage
+                      message={data.common.messages.messageValidationError}
+                    />
                   ) : null}
                   <textarea
                     value={this.state.message}

@@ -7,7 +7,7 @@ const Projects = ({ projects }) => {
       <div className="section-row">
         <div className="projects__wrapper">
           <h2 className="projects__headline">
-            {"Here are a few of my personal projects"}
+            {"Here are a few of my personal projects (more to be added soon)"}
           </h2>
           <div className="projects__element_wrapper">
             {projects.map(project => {

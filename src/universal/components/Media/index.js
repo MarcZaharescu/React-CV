@@ -6,7 +6,12 @@ import data from "../../../data";
 const Media = ({ icons, size, color }) => {
   return (
     <ul className="social__media-wrapper">
-      <SocialMediaIcons  className="social__media-icons" icons={data.common.socialMediaIcons} iconSize={size} iconColor={color} />
+      <SocialMediaIcons
+        className="social__media-icons"
+        icons={data.common.socialMediaIcons}
+        iconSize={size}
+        iconColor={color}
+      />
     </ul>
   );
 };

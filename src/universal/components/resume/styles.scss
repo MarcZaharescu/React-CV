@@ -4,7 +4,6 @@ $color-lightbrown: #6e7881;
 $color-lightgrey: #e6e8e6;
 $color-grey: #d4d2d2cc;
 
-
 #resume {
   color: black;
 }
@@ -23,10 +22,10 @@ $color-grey: #d4d2d2cc;
 }
 
 .resume__section-wrapper {
-    &:last-child   {
-        border-bottom: 0px;
-    }
- }
+  &:last-child {
+    border-bottom: 0px;
+  }
+}
 
 .resume__element-wrapper {
   padding-bottom: 5%;
@@ -114,6 +113,6 @@ $color-grey: #d4d2d2cc;
   text-decoration: none;
 }
 
-.skills__section__wrapper{
+.skills__section__wrapper {
   padding-top: 5%;
 }

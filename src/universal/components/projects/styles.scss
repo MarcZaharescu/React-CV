@@ -46,6 +46,7 @@ $overlay-color: #b0b0a0;
   position: relative;
 }
 .projects__element__image-overlay {
+  cursor: pointer;
   background: $overlay-color;
   height: 100%;
   width: 100%;
@@ -62,14 +63,13 @@ $overlay-color: #b0b0a0;
     padding-left: 10%;
     letter-spacing: 2px;
     margin-bottom: 2px;
-
   }
   p {
     color: #ebecec;
     font-weight: 100;
     font-size: 1.2rem;
     padding-left: 10%;
-    margin-top: 2px
+    margin-top: 2px;
   }
 }
 

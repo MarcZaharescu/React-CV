@@ -56,9 +56,10 @@ const data = {
 
   about: {
     aboutProps: {
-      aboutme: `I will update this about me section later. This is just an example text to
-    see what it looks like to have some text here. About 3 lines. I will update this about me section later.
-    This is just an example text to see what it looks like to have some text here. About 3 lines.`,
+      aboutme: `I am very ambitious individual with high interest in technology. I graduated with a 1st Degree with Honours in Artificial Intelligence with Computer Science Bsc from The University of Birmingham and
+      now I am pursuing a software engineering career at Tesco Plc. Here I'm building web applications using React, Redux and Nodejs but I got also exposed to aws lambdas and terraform.
+      Recently I tried to challange myself to build at least 1 end to end app in my free time every month so let's see how this goes.
+      `,
       name: "Marc Zaharescu",
       city: "London",
       country: "United Kingdom",
@@ -74,17 +75,15 @@ const data = {
         school: "University of Birmingham",
         degree: "Artificial Intelligence with Computer-Science Bsc",
         year: "2013 - 2017",
-        description: `Describe what I did here for about three lines. Describe what I
-    did here for about three lines. Describe what I did here for
-    about 2-3 lines`
+        description: `I graduated with 1st Degree with Honours in summer 2017. Most of the projects I developed durring university were java based applications but I also udertook courses on C/C++, Ocaml, Haskell and matlab.
+        My final year dissertaion was built around a product recommender system that I developed from scratch with the aim to recommend clothes to a consumer using Natural Language Processing, Sentiment Analysis and Image Similarity.
+        However probably the most exciting time about my university time was durring the exchange programs and proejcts I took part to: Asia as the Global Future, Study China Program and APYE Thailand. Here I met some extremly talended and like minded individuals who I am stil close friends today.`
       },
       {
         school: "Gheorghe Lazar National College",
         degree: "Maths with Computer-Science",
         year: "2009 - 2013",
-        description: `Describe what I did here for about three lines. Describe what I
-  did here for about three lines. Describe what I did here for
-  about 2-3 lines`
+        description: `Romanian Bachalaurreate Diploma 9.11 out of 10`
       }
     ],
 
@@ -93,32 +92,39 @@ const data = {
         company: "Tesco Plc",
         title: "Software Engineer",
         year: "2017 - present",
-        description: `Describe what I did here for about three lines. Describe what I
-    did here for about three lines. Describe what I did here for
-    about 2-3 lines`
+        description: `I am currenlty working in an agile and high profile web team, delivering critical functionality (login and registration) on top of an account management application.
+         Experienced with many modern web frameworks: Node.js, React and Redux.
+          Worked for 3 months on the main groceries android app using: Kotlin, Java, Dagger2, Gradle.
+         Part of the out-of-hours support team with the responsibility of troubleshooting and rectifying production problems.`
       },
       {
         company: "Talmix Plc",
         title: "Data Analyst",
         year: "2016 - 2017",
-        description: `Describe what I did here for about three lines.Describe what I
-  did here for about three lines.Describe what I did here for
-  about 2-3 lines`
+        description: `Here I worked during my industrial placement program.
+        I got the chance to work closely with industry experts and learn how to be proactive and find answers to problems with limited support.
+        My main dutites included financial data modeling and analytics.
+         Developing and customizing the company’s CRM (Salesforce).
+
+        Developing Google Chrome Extensions to enhance several business
+        processes.
+        Helped me build upon my analytical and problem solving skills by
+        working in an agile environment.`
       }
     ],
 
     skillsElements: [
       {
         name: "JavaScript",
-        level: "60%"
+        level: "70%"
       },
       {
         name: "React",
-        level: "30%"
+        level: "50%"
       },
       {
         name: "NodeJs",
-        level: "40%"
+        level: "60%"
       },
       {
         name: "Redux",
@@ -127,7 +133,7 @@ const data = {
 
       {
         name: "Java",
-        level: "50%"
+        level: "55%"
       },
       {
         name: "AWS",
@@ -135,7 +141,7 @@ const data = {
       },
       {
         name: "Git",
-        level: "60%"
+        level: "80%"
       }
     ]
   },
@@ -143,42 +149,26 @@ const data = {
   projects: {
     projectProps: [
       {
-        title: "Project1",
+        title: "Clothes Recommender System",
         image: "project1.png",
-        description: "Description project1",
-        href: "www.google.com"
+        description:
+          "NLP, Sentiment Analysis and Image Similairty app to recommend most suitable product based on a imput query",
+        href: "https://github.com/MarcZaharescu/Product-Recomender-System"
       },
+
       {
-        title: "Project2",
+        title: "React CV application",
         image: "project2.png",
-        description: "Description project2",
-        href: "www.google.com"
-      },
-      {
-        title: "Project3",
-        image: "project3.png",
-        description: "Description project3",
-        href: "www.google.com"
-      },
-      {
-        title: "Project4",
-        image: "project4.png",
-        description: "Description project4",
-        href: "www.google.com"
-      },
-      {
-        title: "Project5",
-        image: "project2.png",
-        description: "Description project5",
-        href: "www.google.com"
+        description:
+          "A React, Nodejs CV template web app",
+        href: "https://github.com/MarcZaharescu/react-cv"
       }
     ]
   },
+
   contact: {
     contactProps: {
-      heading: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-    voluptatem quia voluptas sit aspernatur aut odit aut fugit.`
+      heading: `If you have an interesting project you'd want me to work on or you just want to catch up feel free send me a message below :)  `
     }
   }
 };

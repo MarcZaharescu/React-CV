@@ -5,7 +5,6 @@ import Media from "../media";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleUp } from "@fortawesome/fontawesome-free-solid";
 const Footer = props => {
-
   const scrollToHeader = () => {
     window.scrollTo(0, 0);
   };
@@ -14,14 +13,15 @@ const Footer = props => {
     <section id="footer" className="no-overflow">
       <div className="footer__wrapper">
         <div className="footer__button">
-          <FontAwesomeIcon className="footer__button-icon"
+          <FontAwesomeIcon
+            className="footer__button-icon"
             icon="chevron-circle-up"
             size={`4x`}
             onClick={scrollToHeader}
           />
         </div>
         <div className="footer__media">
-          <Media  size={`3em`} color={"#656565"} />
+          <Media size={`3em`} color={"#656565"} />
         </div>
         <div className="footer__details">
           <span>{"© Copyright 2018 Marc Zaharescu"}</span>

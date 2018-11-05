@@ -3,8 +3,6 @@ const nodemailer = require("nodemailer");
 export async function postSendEmailPage(req, res, next) {
   const { name, email, subject, message } = req.body;
 
-  console.log('creds', req.body);
-
   nodemailer.createTestAccount((err, account) => {
     let transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
