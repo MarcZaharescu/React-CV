@@ -1,4 +1,5 @@
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
+import stmpAuth from "../../../../config/emailkey.json";
 
 export async function postSendEmailPage(req, res, next) {
   const { name, email, subject, message } = req.body;
@@ -9,8 +10,8 @@ export async function postSendEmailPage(req, res, next) {
       port: 587,
       secure: false,
       auth: {
-        user: "marczaharescusmtp@gmail.com",
-        pass: "marcsmtp"
+        user: stmpAuth.user,
+        pass: stmpAuth.user
       }
     });
 
