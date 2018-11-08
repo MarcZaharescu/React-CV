@@ -56,10 +56,15 @@ const data = {
 
   about: {
     aboutProps: {
-      aboutme: `I am very ambitious individual with high interest in technology. I graduated with a 1st Degree with Honours in Artificial Intelligence with Computer Science Bsc from The University of Birmingham and
-      now I am pursuing a software engineering career at Tesco Plc. Here I'm building web applications using React, Redux and Nodejs but I got also exposed to aws lambdas and terraform.
-      Recently I tried to challange myself to build at least 1 end to end app in my free time every month so let's see how this goes.
-      `,
+      aboutme: [
+        {
+          p: `I am very ambitious individual with high interest in technology. I graduated with a 1st Degree with Honours in Artificial Intelligence with Computer Science Bsc from The University of Birmingham and
+              now I am pursuing a software engineering career at Tesco PLC. Here I'm building web applications using React, Redux and NodeJS but I got also exposed to AWS lambdas and Terraform.`
+        },
+        {
+          p: `Recently I tried to challenge myself to build at least 1 end to end app in my free time every month so let's see how this goes.`
+        }
+      ],
       name: "Marc Zaharescu",
       city: "London",
       country: "United Kingdom",
@@ -75,15 +80,23 @@ const data = {
         school: "University of Birmingham",
         degree: "Artificial Intelligence with Computer-Science Bsc",
         year: "2013 - 2017",
-        description: `I graduated with 1st Degree with Honours in summer 2017. Most of the projects I developed durring university were java based applications but I also udertook courses on C/C++, Ocaml, Haskell and matlab.
-        My final year dissertaion was built around a product recommender system that I developed from scratch with the aim to recommend clothes to a consumer using Natural Language Processing, Sentiment Analysis and Image Similarity.
-        However probably the most exciting time about my university time was durring the exchange programs and proejcts I took part to: Asia as the Global Future, Study China Program and APYE Thailand. Here I met some extremly talended and like minded individuals who I am stil close friends today.`
+        description: [
+          {
+            p: `I graduated with 1st Degree with Honours in summer 2017. Most of the projects I developed during university were java based applications but I also undertook courses on C/C++, OCaml, Haskell and Matlab.`
+          },
+          {
+            p: `My final year dissertation was built around a product recommender system that I developed from scratch with the aim to recommend clothes to consumers using Natural Language Processing, Sentiment Analysis and Image Similarity.`
+          },
+          {
+            p: `However probably the most exciting time about my university time was during the exchange programs and projects I took part to: Asia as the Global Future, Study China Program and APYE Thailand. Here I met some extremely talented and like-minded people with whom I am still close friends today.`
+          }
+        ]
       },
       {
         school: "Gheorghe Lazar National College",
         degree: "Maths with Computer-Science",
         year: "2009 - 2013",
-        description: `Romanian Bachalaurreate Diploma 9.11 out of 10`
+        description: [{ p: `Romanian Bachalaurreate Diploma 9.11 out of 10` }]
       }
     ],
 
@@ -92,24 +105,35 @@ const data = {
         company: "Tesco Plc",
         title: "Software Engineer",
         year: "2017 - present",
-        description: `I am currenlty working in an agile and high profile web team, delivering critical functionality (login and registration) on top of an account management application.
-         Experienced with many modern web frameworks: Node.js, React and Redux.
-          Worked for 3 months on the main groceries android app using: Kotlin, Java, Dagger2, Gradle.
-         Part of the out-of-hours support team with the responsibility of troubleshooting and rectifying production problems.`
+        description: [
+          {
+            p: `I am currenlty working in an agile and high profile web team, delivering critical functionality (login and registration) on top of an account management application.
+               Experienced with many modern web frameworks and tools: NodeJS, React, Redux, Jest, Sass, Webpack. Our apps are built with Jenkins CI/CD pipelines and wrapped into Docker containers.`
+          },
+          {
+            p: `Worked for 3 months on the main groceries android app using: Kotlin, Java, Dagger2, Gradle.
+           And I have recently become part of the out-of-hours support team with the responsibility of troubleshooting and rectifying production problems.`
+          }
+        ]
       },
       {
         company: "Talmix Plc",
         title: "Data Analyst",
         year: "2016 - 2017",
-        description: `Here I worked during my industrial placement program.
-        I got the chance to work closely with industry experts and learn how to be proactive and find answers to problems with limited support.
-        My main dutites included financial data modeling and analytics.
-         Developing and customizing the company’s CRM (Salesforce).
-
-        Developing Google Chrome Extensions to enhance several business
-        processes.
-        Helped me build upon my analytical and problem solving skills by
-        working in an agile environment.`
+        description: [
+          {
+            p: `Here I worked during my industrial placement program.
+                I got the chance to work closely with industry experts and learn how to be proactive and find answers to problems with limited support.
+                My main dutites included financial data modeling and analytics.`
+          },
+          {
+            p: `In addition, I was also in charge of developing and customizing the company’s CRM (Salesforce) in Apex (java based language) and
+                develop Google Chrome Extensions to enhance several business
+                processes.
+                This was a great experience that helped me build upon my analytical and problem solving skills by
+                working in an agile environment.`
+          }
+        ]
       }
     ],
 
@@ -152,15 +176,14 @@ const data = {
         title: "Clothes Recommender System",
         image: "project1.png",
         description:
-          "NLP, Sentiment Analysis and Image Similairty app to recommend most suitable product based on a imput query",
+          "NLP, Sentiment Analysis and Image Similarity app to recommend most suitable product based on a imput query",
         href: "https://github.com/MarcZaharescu/Product-Recomender-System"
       },
 
       {
         title: "React CV application",
         image: "project2.png",
-        description:
-          "A React, Nodejs CV template web app",
+        description: "A React, Nodejs CV template web app",
         href: "https://github.com/MarcZaharescu/react-cv"
       }
     ]
@@ -168,7 +191,7 @@ const data = {
 
   contact: {
     contactProps: {
-      heading: `If you have an interesting project you'd want me to work on or you just want to catch up feel free send me a message below :)  `
+      heading: `If you have an interesting project you'd want me to work on, you just want to catch up or you have some suggestions/improvements I could benefit from, feel free send me a message below!`
     }
   }
 };

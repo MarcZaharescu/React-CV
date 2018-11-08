@@ -1,9 +1,7 @@
 {
   "name": "react-cv",
   "version": "0.0.1",
-  "author": {
-    "name": "Marc.Zaharescu"
-  },
+  "author": "Marc.Zaharescu",
   "scripts": {
     "start": "babel-node ./src/server/server.js ",
     "webpack": "webpack --mode development --config=webpack.config.js",
@@ -24,6 +22,7 @@
     "nodemailer": "^4.6.8",
     "nodemon": "^1.18.4",
     "npm": "^6.4.1",
+    "express": "^4.16.3",
     "prettify": "^0.1.7",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
@@ -60,14 +59,11 @@
     "eslint-config-prettier": "^2.10.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-prettier": "^2.6.2",
-    "express": "^4.16.3",
     "extract-text-webpack-plugin": "v4.0.0-alpha.0",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.4",
     "prettier": "1.14.3",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
     "react-social-icons": "^3.0.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.17.0",

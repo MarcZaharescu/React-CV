@@ -15,7 +15,9 @@ const Resume = ({ education, work, skills }) => {
           <span className="resume__element__paragraph">{education.year}</span>
         </p>
         <span className="resume__element__description">
-          {education.description}
+          {education.description.map(paragraph => {
+            return <p>{paragraph.p}</p>;
+          })}
         </span>
       </div>
     );
@@ -31,7 +33,11 @@ const Resume = ({ education, work, skills }) => {
           <span className="resume__element__paragraph">•</span>
           <span className="resume__element__paragraph">{work.year}</span>
         </p>
-        <span className="resume__element__description">{work.description}</span>
+        <span className="resume__element__description">
+          {work.description.map(paragraph => {
+            return <p>{paragraph.p}</p>;
+          })}
+        </span>
       </div>
     );
   });
@@ -44,7 +50,7 @@ const Resume = ({ education, work, skills }) => {
           style={{
             "padding-right": `${skill.level}`
           }}
-          />
+        />
       </li>
     );
   });

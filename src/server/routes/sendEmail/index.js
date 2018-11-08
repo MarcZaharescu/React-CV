@@ -11,7 +11,7 @@ export async function postSendEmailPage(req, res, next) {
       secure: false,
       auth: {
         user: stmpAuth.user,
-        pass: stmpAuth.user
+        pass: stmpAuth.pass
       }
     });
 

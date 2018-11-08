@@ -40,7 +40,11 @@ class About extends React.Component {
 
           <div className="aboutme__right" className="right-column">
             <h2 className="aboutme__right-title">About Me</h2>
-            <p className="aboutme__right-span">{aboutme}</p>
+            <p className="aboutme__right-span">
+              {aboutme.map(paragraph => {
+                return <p>{paragraph.p}</p>;
+              })}
+            </p>
 
             <div className="aboutme__right__contact">
               <h2 className="aboutme__right-title">Contact Details</h2>

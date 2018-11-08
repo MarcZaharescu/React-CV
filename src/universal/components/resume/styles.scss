@@ -11,7 +11,7 @@ $color-grey: #d4d2d2cc;
 .resume-items {
   font-weight: 400;
   margin: auto;
-  padding: 0em 0em 1em;
+  padding: 0em 0em 2em;
   @media (max-width: 800px) {
     text-align: center;
     padding-bottom: 3%;
@@ -57,7 +57,7 @@ $color-grey: #d4d2d2cc;
 .resume__element__description {
   color: $color-lightbrown;
   font-weight: 100;
-  font-size: calc(1.4rem + 0.15vw);
+  font-size: calc(1.4rem + 0.25vw);
   line-height: 30px;
 }
 
