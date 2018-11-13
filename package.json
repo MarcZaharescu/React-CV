@@ -6,7 +6,9 @@
     "start": "babel-node ./src/server/server.js ",
     "webpack": "webpack --mode development --config=webpack.config.js",
     "server": "nodemon --watch server --exec babel-node -- ./src/server/server.js",
-    "dev": "webpack --mode development"
+    "dev": "webpack --mode development",
+    "build": "react-scripts build",
+    "deploy": "aws s3 sync dist/ s3://www.marczaharescu.com"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.6",
@@ -15,6 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.4.1",
     "@fortawesome/react-fontawesome": "^0.1.3",
     "body-parser": "^1.18.3",
+    "express": "^4.16.3",
     "i": "^0.3.6",
     "immutable": "^3.8.1",
     "jquery": "^3.2.1",
@@ -22,7 +25,6 @@
     "nodemailer": "^4.6.8",
     "nodemon": "^1.18.4",
     "npm": "^6.4.1",
-    "express": "^4.16.3",
     "prettify": "^0.1.7",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
@@ -33,6 +35,7 @@
     "react-router-dom": "^4.3.1",
     "react-router-hash-link": "^1.2.0",
     "react-router-redux": "^5.0.0-alpha.6",
+    "react-scripts": "^2.1.1",
     "react-scroll-to-component": "^1.0.2",
     "react-social-media-icons": "^1.0.3",
     "redux": "^4.0.0",

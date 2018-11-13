@@ -17,7 +17,7 @@ const Projects = ({ projects }) => {
                   <div className="projects__element__image-wrapper">
                     <img
                       className="projects__element__image"
-                      src={require(`../../../public/images/${project.image}`)}
+                      src={require(`../../../../public/images/${project.image}`)}
                       href={project.href}
                     />
 

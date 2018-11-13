@@ -11,7 +11,7 @@ class About extends React.Component {
 
   downloadResume() {
     var element = document.createElement("a");
-    element.href = require("../../../public/documents/Marc Theodor Zaharescu - CV.pdf");
+    element.href = require("../../../../public/documents/Marc Theodor Zaharescu - CV.pdf");
     element.download = "Marc Theodor Zaharescu - CV.pdf";
     element.click();
   }
@@ -33,7 +33,7 @@ class About extends React.Component {
           <div className="left-column">
             <img
               className="aboutme__picture"
-              src={require("../../../public/images/profile-picture.png")}
+              src={require("../../../../public/images/profile-picture.png")}
               alt="Marc Zaharescu"
             />
           </div>

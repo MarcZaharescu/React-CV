@@ -12,7 +12,7 @@ const APP_PORT = 3030;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(webpackMiddleware(webpack(webpackConfig)));
-app.use(`/`, express.static(__dirname + "/../public"));
+app.use(`/`, express.static(__dirname + "/../../dist"));
 app.use(routes);
 
 app.listen(APP_PORT, error => {

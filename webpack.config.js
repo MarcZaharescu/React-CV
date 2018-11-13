@@ -4,7 +4,7 @@ const webpack = require("webpack");
 const config = {
   entry: path.join(__dirname, "/src/client/index.js"),
   output: {
-    path: path.join(__dirname, "/src/public/"),
+    path: path.join(__dirname, "/dist/"),
     filename: "bundle.js"
   },
   module: {
