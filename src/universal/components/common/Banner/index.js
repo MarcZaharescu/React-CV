@@ -9,7 +9,7 @@ const Banner = ({ message, type }) => {
   );
 };
 
-Banner.PropTypes = {
+Banner.propTypes = {
   message: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired
 };

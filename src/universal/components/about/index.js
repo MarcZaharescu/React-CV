@@ -22,8 +22,6 @@ class About extends React.Component {
       name,
       city,
       country,
-      street,
-      postcode,
       phone,
       email
     } = this.props;
@@ -40,11 +38,11 @@ class About extends React.Component {
 
           <div className="aboutme__right" className="right-column">
             <h2 className="aboutme__right-title">About Me</h2>
-            <p className="aboutme__right-span">
+            <span className="aboutme__right-span">
               {aboutme.map(paragraph => {
                 return <p>{paragraph.p}</p>;
               })}
-            </p>
+            </span>
 
             <div className="aboutme__right__contact">
               <h2 className="aboutme__right-title">Contact Details</h2>
@@ -52,8 +50,6 @@ class About extends React.Component {
                 <span className="aboutme__right-span">{name}</span> <br />
                 <span className="aboutme__right-span">{`${city}, ${country}`}</span>{" "}
                 <br />
-                <span className="aboutme__right-span">{street}</span> <br />
-                <span className="aboutme__right-span">{postcode}</span> <br />
                 <span className="aboutme__right-span">{phone}</span> <br />
                 <span className="aboutme__right-span">{email}</span> <br />
               </p>
@@ -75,12 +71,10 @@ class About extends React.Component {
 }
 
 About.propTypes = {
-  aboutme: PropTypes.string.isRequired,
+  aboutme: PropTypes.array.isRequired,
   name: PropTypes.string.isRequired,
   city: PropTypes.string.isRequired,
   country: PropTypes.string.isRequired,
-  street: PropTypes.string.isRequired,
-  postcode: PropTypes.string.isRequired,
   phone: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired
 };

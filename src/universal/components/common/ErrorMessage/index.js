@@ -9,7 +9,7 @@ const ErrorMessage = ({ message }) => {
   );
 };
 
-ErrorMessage.PropTypes = {
+ErrorMessage.propTypes = {
   message: PropTypes.string.isRequired
 };
 

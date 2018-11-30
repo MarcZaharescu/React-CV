@@ -2,9 +2,8 @@ $color-darkgrey3: #4e4c4c;
 $color-darkbrown3: #75787b;
 $color-darkbrown4: #2b2b2b;
 
-
 #about-me {
-  background:$color-darkbrown4;
+  background: $color-darkbrown4;
 }
 
 .aboutme__picture {
@@ -25,7 +24,7 @@ $color-darkbrown4: #2b2b2b;
 }
 
 .aboutme__right-span {
-  line-height: calc(2rem +  0.6vw);
+  line-height: calc(2rem + 0.6vw);
   margin: 1em 0em 2em 0em;
   font-weight: 100;
   font-size: calc(1.2rem + 0.3vw);
@@ -35,6 +34,7 @@ $color-darkbrown4: #2b2b2b;
 .aboutme__right-download-wrapper {
   margin-top: 1.6em;
   color: white;
+  padding-bottom: 40px;
   @media (min-width: 800px) {
     float: right;
     width: 60%;

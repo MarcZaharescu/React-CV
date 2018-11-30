@@ -102,8 +102,8 @@ class Contact extends React.Component {
             <form action="" method="post" id="contactForm" name="contactForm">
               <fieldset className="contact__form__fieldset">
                 <div className="contact__form__field-wrapper">
-                  <label className="contact__form__field-label" for="name">
-                    Name <span class="required">*</span>
+                  <label className="contact__form__field-label" htmlFor="name">
+                    Name <span className="required">*</span>
                   </label>
                   {this.state.validname === false ? (
                     <ErrorMessage
@@ -129,8 +129,8 @@ class Contact extends React.Component {
                 </div>
 
                 <div className="contact__form__field-wrapper">
-                  <label className="contact__form__field-label" for="email">
-                    Email <span class="required">*</span>
+                  <label className="contact__form__field-label" htmlFor="email">
+                    Email <span className="required">*</span>
                   </label>
                   {this.state.validemail === false ? (
                     <ErrorMessage
@@ -156,7 +156,7 @@ class Contact extends React.Component {
                 </div>
 
                 <div className="contact__form__field-wrapper">
-                  <label className="contact__form__field-label" for="subject">
+                  <label className="contact__form__field-label" htmlFor="subject">
                     Subject
                   </label>
                   {this.state.validsubject === false ? (
@@ -183,8 +183,8 @@ class Contact extends React.Component {
                 </div>
 
                 <div className="contact__form__field-wrapper">
-                  <label className="contact__form__field-label" for="message">
-                    Message <span class="required">*</span>
+                  <label className="contact__form__field-label" htmlFor="message">
+                    Message <span className="required">*</span>
                   </label>
                   {this.state.validmessage === false ? (
                     <ErrorMessage
@@ -241,7 +241,7 @@ class Contact extends React.Component {
 }
 
 Contact.propTypes = {
-  contactDetails: PropTypes.array.isRequired
+  contactDetails: PropTypes.object.isRequired
 };
 
 export default Contact;

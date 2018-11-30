@@ -59,7 +59,7 @@ const data = {
       aboutme: [
         {
           p: `I am very ambitious individual with high interest in technology. I graduated with a 1st Degree with Honours in Artificial Intelligence with Computer Science Bsc from The University of Birmingham and
-              now I am pursuing a software engineering career at Tesco PLC. Here I'm building web applications using React, Redux and NodeJS but I got also exposed to AWS lambdas and Terraform.`
+              now I am pursuing a software engineering career at Tesco PLC. Here I’m building web applications using React, Redux and NodeJS and have also been exposed to AWS lambdas and Terraform.`
         },
         {
           p: `Recently I tried to challenge myself to build at least 1 end to end app in my free time every month so let's see how this goes.`
@@ -68,9 +68,7 @@ const data = {
       name: "Marc Zaharescu",
       city: "London",
       country: "United Kingdom",
-      street: "22 Bletchley Street",
-      postcode: "N1 7NX",
-      phone: "+40752071299",
+      phone: "+447834634909",
       email: "zaharescumarc10@gmail.com"
     }
   },

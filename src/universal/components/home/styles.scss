@@ -4,22 +4,30 @@ header {
   height: 100%;
   min-height: 500px;
   width: 100%;
-  background: url("https://unsplash.it/1080/720/?image=377") no-repeat fixed
+  background: url("../../../public/images/background4.png") no-repeat fixed
     center / cover;
   text-align: center;
   overflow: hidden;
 }
 
+.home__wrapper {
+  padding-top: 80px;
+  @media (min-width: 800px) {
+    padding-top: 0px;
+  }
+}
+
 .home__headline--summary {
-  font-size: calc(1.2rem + 0.6vw);
+  font-size: calc(2rem + 0.3vw);
   font-weight: 500;
   color: #b8b9ba;
-  padding: 20px 40px 20px 40px;
-  letter-spacing: 0.2rem;
-  line-height: calc(1rem + 1.7vw);
-  width: 60%;
+  padding: 40px 40px 40px 40px;
+  letter-spacing: 0.12rem;
+  line-height: 3.4rem;
+  width: 80%;
   margin: auto;
   @media (min-width: 800px) {
+    padding: 20px 40px 20px 40px;
     width: 45%;
     font-size: calc(1rem + 0.8vw);
   }
@@ -33,10 +41,11 @@ header {
 }
 
 .home__button {
-  visibility: hidden;
+  padding-top: 20%;
+  visibility: visible;
+  font-size: 20px;
   @media (min-width: 800px) {
     padding-top: 12%;
-    visibility: visible;
     font-size: 16px;
   }
 }

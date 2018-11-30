@@ -43,12 +43,12 @@ const Resume = ({ education, work, skills }) => {
   });
   const skillsSection = skills.map(skill => {
     return (
-      <li className="skills__element">
+      <li key={skill.name} className="skills__element">
         <h2 className="skills__element__name"> {skill.name}</h2>
         <span
           className="resume__element__description skills__element__level"
           style={{
-            "padding-right": `${skill.level}`
+            "paddingRight": `${skill.level}`
           }}
         />
       </li>
@@ -90,9 +90,9 @@ const Resume = ({ education, work, skills }) => {
 };
 
 Resume.propTypes = {
-  education: PropTypes.string.isRequired,
-  work: PropTypes.string.isRequired,
-  skills: PropTypes.string.isRequired
+  education: PropTypes.array.isRequired,
+  work: PropTypes.array.isRequired,
+  skills: PropTypes.array.isRequired
 };
 
 export default Resume;
