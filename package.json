@@ -7,7 +7,6 @@
     "webpack": "webpack --mode development --config=webpack.config.js",
     "server": "nodemon --watch server --exec babel-node -- ./src/server/server.js",
     "dev": "webpack --mode development",
-    "build": "react-scripts build",
     "deploy": "aws s3 sync dist/ s3://www.marczaharescu.com"
   },
   "dependencies": {

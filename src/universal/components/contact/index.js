@@ -58,7 +58,7 @@ class Contact extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     if (this.state.formValid) {
-      fetch("/mail", {
+      fetch("https://8a05xmk7i7.execute-api.eu-west-1.amazonaws.com/dev/email/send", {
         method: "post",
         headers: {
           "Content-Type": "application/json"
