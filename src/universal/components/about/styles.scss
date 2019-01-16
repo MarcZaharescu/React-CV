@@ -24,11 +24,18 @@ $color-darkbrown4: #2b2b2b;
 }
 
 .aboutme__right-span {
-  line-height: calc(2rem + 0.6vw);
+  line-height: 2.4rem  ;
   margin: 1em 0em 2em 0em;
-  font-weight: 100;
-  font-size: calc(1.2rem + 0.3vw);
+  font-weight: 400;
+  font-size:  1.65rem ;
   color: $color-darkbrown3;
+
+  @media (min-width: 550px){
+    line-height: 2.8rem;
+    font-weight: 100;
+    font-size: 1.8rem;
+    color: $color-darkbrown3;
+  }
 }
 
 .aboutme__right-download-wrapper {

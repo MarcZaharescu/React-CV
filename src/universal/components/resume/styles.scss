@@ -56,9 +56,14 @@ $color-grey: #d4d2d2cc;
 
 .resume__element__description {
   color: $color-lightbrown;
-  font-weight: 100;
-  font-size: calc(1.4rem + 0.25vw);
+  font-weight: 400;
+  font-size: 1.65rem;
   line-height: 30px;
+
+  @media (min-width: 550px) {
+      font-size: 1.8rem;
+    font-weight: 100;
+  }
 }
 
 .resume__section__title {
