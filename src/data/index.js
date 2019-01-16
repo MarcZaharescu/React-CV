@@ -50,7 +50,7 @@ const data = {
       profession: "Software Engineer",
       location: "London",
       summary:
-        "I'm currenly focusing on Node, React and Redux web applications."
+        "I'm currenly focusing on NodeJS, React and Redux web applications."
     }
   },
 
@@ -58,7 +58,7 @@ const data = {
     aboutProps: {
       aboutme: [
         {
-          p: `I am very ambitious individual with high interest in technology. I graduated with a 1st Degree with Honours in Artificial Intelligence with Computer Science Bsc from The University of Birmingham and
+          p: `I am a very ambitious individual with high interest in technology. I graduated with a 1st Degree with Honours in Artificial Intelligence with Computer Science Bsc from The University of Birmingham and
               now I am pursuing a software engineering career at Tesco PLC. Here I’m building web applications using React, Redux and NodeJS and have also been exposed to AWS lambdas and Terraform.`
         },
         {
@@ -86,7 +86,7 @@ const data = {
             p: `My final year dissertation was built around a product recommender system that I developed from scratch with the aim to recommend clothes to consumers using Natural Language Processing, Sentiment Analysis and Image Similarity.`
           },
           {
-            p: `However probably the most exciting time about my university time was during the exchange programs and projects I took part to: Asia as the Global Future, Study China Program and APYE Thailand. Here I met some extremely talented and like-minded people with whom I am still close friends today.`
+            p: `However probably the most exciting time about my university time was during the exchange programs and projects I took part to: Asia as the Global Future, Study China Program and APYE Thailand. Here I met some extremely talented and like-minded people with whom I am still in contact today.`
           }
         ]
       },
